@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "vietbot-320000",
+  "private_key_id": "d4e91506c9b97ca358c975941d225c7fe1e81420",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDKWasMZKOQgcO5\nygixcRUopiN+W5sxEJenFmBAunhHaE3fxuN8Pdqx9GHJmUv2qZZEvOjv/ZMlWKBy\nmrzfSLaKGIjpQDacXXt4bCOpoEMfAdzIOwFiPG+OSPyV0rNVlhmw+BwTgtMe/3vH\n8wgIzVWNGOQw6Zrbwo/PO1g79ArVjwg7fXP85/0TLlIhICLfq2WQPkyPFDDFBTTN\ny56xkHvmOn/16wwbohPzzaGSawW57OwXvadJ4qYkmUhVkxNtcKA6mds5VCKxbnIf\nrpP3QJmyuT+TowiznxNHasLlMTYkT4x/n6G2nKGsAIn3S5ny/Zq8mMRYJAYsCyI3\nv1HlNSeJAgMBAAECggEAItBdnPK9r3GcBp2LdFfz33wCFE3XfBASP3WaltheNE7u\nQwd5gRk1RLO6lVBSIPyZdXcZDp1OkTjX1g/oWfQtL8I74AGjw7BTu2rDkf4YPj/4\nR9zbBpdGTDEjf/Vx1FJQVkHBttulzin/lm2qXrVROEblj8LJWXD2hB1+N0ZsDMTR\n19jlknbwCewipW+B+KzsImJYvSX8wQSM/fGEDcnvU2BGdP42XfMOeNnY06J0TF9q\nU9ANVoMh4IVBzH9oK5yb194G+P/lLJ+NzkX5ZkqmqQJ/4GXPGQQK0lLrzNmuw9LS\nh5a6gDaAQdlwLvoTgWoyuRA9BgV17c38oepNKCECOQKBgQD8I8nQ74wajcd2D6cV\nolu5Zbl6lHkyxYHmpzKfpA1XyvderMe1Qvj7Dzqn9NJFI1NK4G7EKDLMkH/g49xm\nBxwBHjU4ytF2e8SW9zJS4/nG3UvNqMQ79h2w9iEMFY0GblWXZMpSWarxYaLdxMQB\nLFHPjSmpFaRAFe+J10fh7DiorQKBgQDNcr1bKa6bbSlF8npwU81SQDxYkaOn8Ch0\nYnTxOBUr0Z6EjaHoCQtxGbHHzaHV4JaA3m+LLKo+mM6qkwzEd3c/DOlvMwRyAdvi\n29dibtRrMnzroAWlhd2oPOH/vejrnwJcfWt+3IHKzQjtyptt4HsivNjqvDdTfia1\n1m1a6ogJzQKBgBt2QmrxTE8wFgNz3PzsPBVLURJazYCMJoPavhbJJXLkdmDnbLD/\nZGLj272jWquRF2dWXnoa7r19F5CFAOJT7+bnRWC0JnBDNrxCnEaO8guI2tLBiO4G\n9mDpzdulFUEYD1Z38dlaTtYPjk+dOMPv8dErTNhPtR4NxZM70WZ39gvZAoGBALPB\nSZZC0QgiqbMOpjwzxnjJxUMFInjksrCqGIGZvURaouR9e4SmrUEm5xrXe1rDp0tX\n06akzMv6LRCnmssnb8lVxcTKkYAiyj4idcAlEmw8f3o1x9r8VmVF58M4aVwHAyzj\ne7NCwbksTjyoQfgQKgzJyM0RIyNFRB9jXsjmXWKdAoGAYi5/kRK4uhzTtmRLS1to\nY8eTYebuvmpuTkXC3s6fpG706PPxDC5DnlbJ4l8lLCAVF6firL3rUuO/XsU81Ow6\n1VO0wJjiR0hq8YjW7SunRueNnWZY7lWGdb9EBtr46JzR15W39NLg+3EzA5Gk3rtU\nB7QaMrhRxshJ5O/xxWh9aL4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "vietbot@vietbot-320000.iam.gserviceaccount.com",
+  "client_id": "113699866690284851757",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/vietbot%40vietbot-320000.iam.gserviceaccount.com"
+}
