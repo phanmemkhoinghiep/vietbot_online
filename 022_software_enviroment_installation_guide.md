@@ -73,7 +73,7 @@ python3 -m pip install --upgrade pip
 
 ```sh
 
-python3 -m pip install mutagen gTTS PyAudio pygame pyalsaaudio pyyaml pyusb  termcolor python-vlc pixel-ring apa102 vporcupine google-cloud google-cloud-speech gTTS SpeechRecognition google-cloud-texttospeech
+python3 -m pip install mutagen gTTS PyAudio pygame pyalsaaudio pyyaml pyusb  termcolor python-vlc pixel-ring apa102 porcupine google-cloud google-cloud-speech gTTS SpeechRecognition google-cloud-texttospeech
 
 ```
 
