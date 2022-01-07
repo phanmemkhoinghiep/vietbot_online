@@ -14,7 +14,7 @@ https://drive.google.com/file/d/
 
 1.2. Download bộ Image cho Raspberry Pi đã cài đặt sẵn cho Respeaker USB Mic tại Link sau
 ```sh
-https://drive.google.com/file/d/1kvquheNqf9zwObHwCFxWP_HtK-hPQh48/view?usp=sharing
+https://drive.google.com/file/d/11kG4ACAep-BmTR1BHFrAEYOqEBVtaR0v/view?usp=sharing
 
 ```
 ### STEP2. Ghi vào thẻ SD
