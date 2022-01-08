@@ -76,6 +76,12 @@ python3 -m pip install --upgrade pip
 python3 -m pip install mutagen gTTS PyAudio  pyalsaaudio pyyaml pyusb  termcolor python-vlc pixel-ring apa102 pvporcupine rpi_ws281x google-cloud google-cloud-speech gTTS SpeechRecognition google-cloud-texttospeech
 
 ```
+và
+
+```sh
+python3 -m pip install pygame==2.1.0
+
+```
 
 ### STEP4. Config Mig, Speaker, LED
 
