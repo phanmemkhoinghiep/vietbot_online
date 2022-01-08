@@ -120,46 +120,9 @@ Gõ space bar sau đó gõ backspace
 
 Bấm lần lượt Ctrl + X, sau đó Y rồi Enter
 
-4.1.2. Fix lỗi libportaudio
+4.1.2. Cài đặt âm lượng
 
-sau đó
-
-```sh
-git clone -b alsapatch https://github.com/gglockner/portaudio
-```
-sau đó
-```sh
-cd portaudio
-```
-sau đó
-```sh
-./configure && make
-```
-sau đó
-```sh
-sudo make install
-```
-sau đó
-```sh
-sudo ldconfig
-
-```
-4.1.3. Gỡ Libportaudio mặc định đã cài
-
-```sh
-sudo apt-get remove libportaudio2 -y
-```
-
-sau đó
-```sh
-python3 -m pip install PyAudio
-```
-Sau đó khởi động lại
-
-```sh
-sudo reboot
-```
-Sau khi khởi động lại vào alxamixer bằng lệnh
+Vào alxamixer bằng lệnh
 
 ```sh
 alsamixer
