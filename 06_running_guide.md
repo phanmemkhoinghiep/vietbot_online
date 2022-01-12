@@ -50,7 +50,8 @@ command=/bin/bash -c 'cd /home/pi/vietbot_online/src && python3 start.py'
 numprocs=1
 autostart=true
 autorestart=true
-startretries=0 
+startretries=0
+startsecs=0
 ```
 Bấm Ctrl + X, Y, Enter
 
