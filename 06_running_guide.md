@@ -29,8 +29,7 @@ Sau khi có kết quả thành công, ra lệnh bằng từ khóa đã có trong
 
 ### STEP2.  Chạy tự động khi khởi động Pi
 
-2.1. Chạy bằng Sysstemd
-
+2.1. Chạy bằng Systemd
 
 2.1.2. Tạo file vietbot.conf bằng lệnh
 
