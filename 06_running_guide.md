@@ -29,46 +29,48 @@ Sau khi có kết quả thành công, ra lệnh bằng từ khóa đã có trong
 
 ### STEP2.  Chạy tự động khi khởi động Pi
 
-2.1. Chạy bằng Supervisor 
+2.1. Chạy bằng Sysstemd
 
-2.1.1. Cài đặt supervisor (Nếu chưa cài)
 
-```sh
-sudo apt-get install supervisor -y
-```
 2.1.2. Tạo file vietbot.conf bằng lệnh
 
 ```sh
-sudo nano /etc/supervisor/conf.d/vietbot.conf
+sudo nano /etc/systemd/system/viebot.service
 ```
 Tại cửa sổ Nano, gõ dòng lệnh sau
 
 ```sh
-[program:vietbot]
-directory=/home/pi/vietbot_online/src
-command=/bin/bash -c 'cd /home/pi/vietbot_online/src && python3 start.py'
-numprocs=1
-autostart=true
-autorestart=true
-startretries=0
-startsecs=0
+[Unit]
+Description=vietbot
+After=alsa-state.service
+
+[Service]
+ExecStart = /usr/bin/python3.9  /home/pi/vietbot_online/src/start.py
+WorkingDirectory=/home/pi/vietbot_online/src
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
 ```
 Bấm Ctrl + X, Y, Enter
 
 2.1.3. Gõ lệnh sau
 
 ```sh
-sudo supervisorctl update
+sudo systemctl enable zigbee2mqtt.service
 ```
 Hệ thống sẽ hiện ra
 ```sh
-vietbot: added process group
+Created symlink /etc/systemd/system/multi-user.target.wants/vietbot.service → /etc/systemd/system/vietbot.service.
 ```
-Hệ thống đã sẵn sàng tự động chạy vietbot
+Hệ thống đã sẵn sàng tự động chạy tu dong vietbot
 
 2.1.4. Gõ lệnh sau để chạy vietbot
 ```sh
-sudo supervisorctl start vietbot
+sudo systemctl start vietbot
 ```
 hoặc
 ```sh
@@ -76,80 +78,18 @@ sudo reboot
 ```
 2.1.5. Gõ lệnh sau để xem log
 ```sh
-sudo supervisorctl tail -f vietbot stdout
+ sudo journalctl -u vietbot.service -f
 ```
-2.1.6. Gõ lệnh sau để remove chạy tự động
+2.1.6. Gõ lệnh sau để stop chạy tự động 
 
-Gõ lện để stop
+Gõ lệnh để stop
 
 ```sh
-sudo supervisorctl stop vietbot
-```
-
-```sh
-sudo rm -rf /etc/supervisor/conf.d/vietbot.conf
-```
-Sau đó gõ tiếp
-
-```sh
-sudo supervisorctl update
+sudo systemctl enable zigbee2mqtt.service
 ```
 Hệ thống sẽ hiện ra
 ```sh
-vietbot: removed process group
+Removed /etc/systemd/system/multi-user.target.wants/vietbot.service
 ```
-Hệ thống đã gỡ vietbot khỏi chạy tự động
+Hệ thống đã stop viebot không chạy tự động nữa
 
-2.2. Tự động bằng crontab
-
-2.2.1. Tạo nơi lưu log
-
-```sh
-cd ~
-mkdir logs
-```
-2.2.2. Khai báo crontab
-
-```sh
-crontab -e
-```
-Chọn 1 để edit bằng nano 
-Tại cửa sổ nano, di chuyển xuống dòng cuối cùng rồi gõ
-
-```sh
-@reboot sh /home/pi/vietbot_online/src/start.sh >/home/pi/logs/cronlog 2>&1
-```
-Bấm Ctrl + X, Y, Enter
-
-2.2.3. Khởi động lại Pi 
-
-```sh
-sudo reboot
-```
-Bot sẽ tự động chạy khi khởi động Pi (Chú ý thời gian chạy của bot có thể lâu sau khi khởi động)
-
-2.2.4. Xem log khi chạy
-
-```sh
-cat /home/pi/logs/cronlog
-```
-2.2.5. Gỡ tự động chạy khi khởi động Pi (Nếu cần)
-
-```sh
-crontab -e
-```
-Chọn 1 để edit bằng nano 
-
-Tại cửa sổ nano, di chuyển xuống dòng cuối cùng rồi xóa dòng sau
-
-```sh
-@reboot sh /home/pi/vietbot_online/src/start.sh >/home/pi/logs/cronlog 2>&1
-```
-Bấm Ctrl + X, Y, Enter
-
-Khởi động lại Pi 
-
-```sh
-sudo reboot
-```
-Bot sẽ không tự động chạy khi khởi động Pi nữa
