@@ -59,7 +59,7 @@ Bấm Ctrl + X, Y, Enter
 2.1.3. Gõ lệnh sau
 
 ```sh
-sudo systemctl enable zigbee2mqtt.service
+sudo systemctl enable vietbot.service
 ```
 Hệ thống sẽ hiện ra
 ```sh
@@ -84,7 +84,7 @@ sudo reboot
 Gõ lệnh để stop
 
 ```sh
-sudo systemctl enable zigbee2mqtt.service
+sudo systemctl enable vietbot.service
 ```
 Hệ thống sẽ hiện ra
 ```sh
