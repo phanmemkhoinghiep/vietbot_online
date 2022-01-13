@@ -3,9 +3,7 @@
 ### STEP1. Cài đặt hệ điều hành Raspbian
 
 1.1. Download Raspberry Pi OS
-Tối ưu cho phần cứng Pi Zero Wireless nên Vietbot chỉ cần bản OS Buster Lite
-
-Download đúng phiên bản sau tại địa chỉ:
+Tối ưu cho phần cứng Pi Zero Wireless nên Vietbot chỉ cần bản OS Buster Lite tại trang chủ Pi
 
 
 1.2. Flash vào thẻ nhớ
