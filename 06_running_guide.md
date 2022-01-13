@@ -34,7 +34,7 @@ Sau khi có kết quả thành công, ra lệnh bằng từ khóa đã có trong
 2.1.2. Tạo file vietbot.conf bằng lệnh
 
 ```sh
-sudo nano /etc/systemd/system/viebot.service
+sudo nano /etc/systemd/system/vietbot.service
 ```
 Tại cửa sổ Nano, gõ dòng lệnh sau
 
