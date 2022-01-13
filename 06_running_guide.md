@@ -84,8 +84,16 @@ sudo reboot
 Gõ lệnh để stop
 
 ```sh
-sudo systemctl enable vietbot.service
+sudo systemctl stop vietbot.service
 ```
+vietbot sẽ stop không chạy
+
+Gõ lệnh để disable
+
+```sh
+sudo systemctl disable vietbot.service
+```
+
 Hệ thống sẽ hiện ra
 ```sh
 Removed /etc/systemd/system/multi-user.target.wants/vietbot.service
