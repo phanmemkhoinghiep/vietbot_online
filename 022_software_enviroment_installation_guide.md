@@ -202,7 +202,7 @@ Chạy lệnh sau
 sudo usermod -aG root account_name
 ```
 
-### STEP5. Cấu hình thời gian, tối ưu cho Pi
+### STEP5. Cấu hình thời gian, tối ưu cho Pi, Fix lỗi Audio
 
 5.1. Chạy config
 Chạy lệnh sau
@@ -238,3 +238,18 @@ Chọn 16, OK
 5.5. Khởi động lại Pi
 
 Khi thoát khỏi Raspi Config, chọn Yes để khởi động lại
+
+5.6 Fix lỗi Audio không chạy tự động của Mic USB
+
+Chạy lệnh sau
+
+```sh
+cd /home/pi/       
+git clone https://github.com/shivasiddharth/PulseAudio-System-Wide       
+cd ./PulseAudio-System-Wide/      
+sudo cp ./pulseaudio.service /etc/systemd/system/pulseaudio.service    
+systemctl --system enable pulseaudio.service       
+systemctl --system start pulseaudio.service       
+sudo cp ./client.conf /etc/pulse/client.conf        
+sudo sed -i '/^pulse-access:/ s/$/root,pi/' /etc/group    
+```
