@@ -202,7 +202,7 @@ Chạy lệnh sau
 sudo usermod -aG root account_name
 ```
 
-4.4 Test loa và mic
+4.4. Test loa và mic
 
 4.4.1. Test loa
 Chạy lệnh sau
