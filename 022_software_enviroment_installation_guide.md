@@ -202,6 +202,27 @@ Chạy lệnh sau
 sudo usermod -aG root account_name
 ```
 
+4.4 Test loa và mic
+
+4.4.1. Test loa
+Chạy lệnh sau
+```sh
+speaker-test -t wav -c 2
+```
+4.4.2. Test Mic
+Chạy lệnh sau để ghi âm
+```sh
+arecord --format=S16_LE --duration=5 --rate=16000 --file-type=raw out.raw
+```
+Chạy lệnh sau để phát lại
+```sh
+aplay --format=S16_LE --rate=16000 out.raw
+```
+4.4.3. Test stream giữa Mic và Loa
+```sh
+arecord --format=S16_LE --rate=16000 | aplay --format=S16_LE --rate=16000
+```
+
 ### STEP5. Cấu hình thời gian, tối ưu cho Pi, Fix lỗi Audio
 
 5.1. Chạy config
