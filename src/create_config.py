@@ -80,8 +80,20 @@ data['hotword'].append({
 })
 data['hotword'].append({
     'type': 'porcupine',
-    'file_name': 'hey siri_raspberry-pi.ppn',    
-    'sensitive': 0.3,        
+    'file_name': 'vi-oh-vi_en_raspberry-pi.ppn',    
+    'sensitive': 0.6,        
+    'is_active': True    
+})
+data['hotword'].append({
+    'type': 'porcupine',
+    'file_name': 'vi-o-vi_en_raspberry-pi.ppn',    
+    'sensitive': 0.6,        
+    'is_active': True    
+})
+data['hotword'].append({
+    'type': 'porcupine',
+    'file_name': 'alexa_raspberry-pi.ppn',    
+    'sensitive': 0.6,        
     'is_active': True    
 })
 data['hotword'].append({
@@ -98,14 +110,32 @@ data['hotword'].append({
 })
 data['hotword'].append({
     'type': 'porcupine',
-    'file_name': 'terminator_raspberry-pi.ppn',    
+    'file_name': 'bumblebee_raspberry-pi.ppn',    
     'sensitive': 0.6,        
     'is_active': True    
 })
 data['hotword'].append({
     'type': 'porcupine',
-    'file_name': 'ok google_raspberry-pi.ppn',    
-    'sensitive': 0.3,        
+    'file_name': 'computer_raspberry-pi.ppn',    
+    'sensitive': 0.6,        
+    'is_active': True    
+})
+data['hotword'].append({
+    'type': 'porcupine',
+    'file_name': 'grapefruit_raspberry-pi.ppn',    
+    'sensitive': 0.6,        
+    'is_active': True    
+})
+data['hotword'].append({
+    'type': 'porcupine',
+    'file_name': 'grasshopper_raspberry-pi.ppn',    
+    'sensitive': 0.6,        
+    'is_active': True    
+})
+data['hotword'].append({
+    'type': 'porcupine',
+    'file_name': 'hey barista_raspberry-pi.ppn',    
+    'sensitive': 0.6,        
     'is_active': True    
 })
 data['hotword'].append({
@@ -116,7 +146,7 @@ data['hotword'].append({
 })
 data['hotword'].append({
     'type': 'porcupine',
-    'file_name': 'alexa_raspberry-pi.ppn',    
+    'file_name': 'hey siri_raspberry-pi.ppn',    
     'sensitive': 0.6,        
     'is_active': True   
 })
@@ -125,6 +155,36 @@ data['hotword'].append({
     'file_name': 'jarvis_raspberry-pi.ppn',    
     'sensitive': 0.6,        
     'is_active': True   
+})
+data['hotword'].append({
+    'type': 'porcupine',
+    'file_name': 'ok google_raspberry-pi.ppn',    
+    'sensitive': 0.6,        
+    'is_active': True    
+})
+data['hotword'].append({
+    'type': 'porcupine',
+    'file_name': 'pico clock_raspberry-pi.ppn',    
+    'sensitive': 0.6,        
+    'is_active': True    
+})
+data['hotword'].append({
+    'type': 'porcupine',
+    'file_name': 'picovoice_raspberry-pi.ppn',    
+    'sensitive': 0.6,        
+    'is_active': True    
+})
+data['hotword'].append({
+    'type': 'porcupine',
+    'file_name': 'porcupine_raspberry-pi.ppn',    
+    'sensitive': 0.6,        
+    'is_active': True    
+})
+data['hotword'].append({
+    'type': 'porcupine',
+    'file_name': 'terminator_raspberry-pi.ppn',    
+    'sensitive': 0.6,        
+    'is_active': True    
 })
 data['continuous_asking'] = []
 data['continuous_asking'].append({
@@ -222,12 +282,25 @@ data['remote_tts'].append({
     'is_active': False    
 })
 
-data['hass_skill'] = []
-data['hass_skill'].append({
-    'hass_url':'https://test123.duckdns.org',
-    'hass_token': '123sfsdfjlsfj',
+data['smh_skill'] = []
+data['smh_skill'].append({
+    'smh_name': 'hass',
+    'smh_url':'https://abc.duckdns.org:8123',
+    'smh_token1': 'sdfsdfdsf',
+    'smh_token2':'',
+    'smh_token3':'',
     'is_active': True        
 })
+
+data['smh_skill'].append({
+    'smh_name': 'vcchome',
+    'smh_url':'',
+    'smh_token1': '8ed3ac0sdfsdfsdbc5a0e',
+    'smh_token2': 'F27F4F2FA8sfdD5EF1EC8',
+    'smh_token3': 'eyJhbGsfsdLWtRsfsdfbWfvMFTf28g',
+    'is_active': False        
+})
+
 
 data['incrase_volume'] = []
 data['incrase_volume'].append({
