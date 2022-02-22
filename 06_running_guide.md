@@ -31,7 +31,7 @@ Sau khi có kết quả thành công, ra lệnh bằng từ khóa đã có trong
 
 2.1. Chạy bằng Systemd
 
-2.1.2. Tạo file vietbot.conf bằng lệnh
+2.1.1. Tạo file vietbot.service bằng lệnh
 
 ```sh
 sudo nano /etc/systemd/system/vietbot.service
@@ -56,7 +56,7 @@ WantedBy=multi-user.target
 ```
 Bấm Ctrl + X, Y, Enter
 
-2.1.3. Gõ lệnh sau
+2.1.2. Gõ lệnh sau
 
 ```sh
 sudo systemctl enable vietbot.service
@@ -67,7 +67,7 @@ Created symlink /etc/systemd/system/multi-user.target.wants/vietbot.service → 
 ```
 Hệ thống đã sẵn sàng tự động chạy tu dong vietbot
 
-2.1.4. Gõ lệnh sau để chạy vietbot
+2.1.3. Gõ lệnh sau để chạy tự động vietbot
 ```sh
 sudo systemctl start vietbot
 ```
@@ -75,11 +75,11 @@ hoặc
 ```sh
 sudo reboot
 ```
-2.1.5. Gõ lệnh sau để xem log
+2.1.4. Gõ lệnh sau để xem log
 ```sh
  sudo journalctl -u vietbot.service -f
 ```
-2.1.6. Gõ lệnh sau để stop chạy tự động 
+2.1.5. Gõ lệnh sau để stop chạy tự động 
 
 Gõ lệnh để stop
 
