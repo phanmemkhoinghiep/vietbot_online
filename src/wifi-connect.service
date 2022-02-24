@@ -3,7 +3,7 @@ Description=Balena wifi connect service
 After=NetworkManager.service
 [Service]
 Type=simple
-ExecStart=/bin/sh /home/pi/start-wifi-connect.sh
+ExecStart=/bin/sh /home/pi/vietbot_online/src/start-wifi-connect.sh
 Restart=on-failure
 SyslogIdentifier=wifi-connect
 Type=idle
