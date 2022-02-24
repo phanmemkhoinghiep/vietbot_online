@@ -81,12 +81,12 @@ sudo reboot
 ```
 2.1.5. Gõ lệnh sau để stop chạy tự động 
 
-Gõ lệnh để stop
+Gõ lệnh để stop tạm thời
 
 ```sh
 sudo systemctl stop vietbot.service
 ```
-vietbot sẽ stop không chạy
+vietbot sẽ stop không chạy cho đến khi khởi động lại
 
 Gõ lệnh để disable
 
@@ -98,5 +98,5 @@ Hệ thống sẽ hiện ra
 ```sh
 Removed /etc/systemd/system/multi-user.target.wants/vietbot.service
 ```
-Hệ thống đã stop viebot không chạy tự động nữa
+Hệ thống đã stop vietbot không chạy tự động nữa
 
