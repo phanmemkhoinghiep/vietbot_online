@@ -292,6 +292,12 @@ data['smh_skill'].append({
     'is_active': True        
 })
 
+data['time_playback'] = []
+data['time_playback'].append({
+    'time_playback': 60,    
+    'is_active': True    
+})
+
 data['smh_skill'].append({
     'smh_name': 'vcchome',
     'smh_url':'',
