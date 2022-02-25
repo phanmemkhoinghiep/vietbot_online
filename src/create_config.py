@@ -282,6 +282,13 @@ data['remote_tts'].append({
     'is_active': False    
 })
 
+
+data['time_playback'] = []
+data['time_playback'].append({
+    'time_playback': 60,    
+    'is_active': True    
+})
+
 data['smh_skill'] = []
 data['smh_skill'].append({
     'smh_name': 'hass',
@@ -290,12 +297,6 @@ data['smh_skill'].append({
     'smh_token2':'',
     'smh_token3':'',
     'is_active': True        
-})
-
-data['time_playback'] = []
-data['time_playback'].append({
-    'time_playback': 60,    
-    'is_active': True    
 })
 
 data['smh_skill'].append({
