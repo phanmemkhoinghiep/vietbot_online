@@ -23,7 +23,7 @@ chmod +x start-wifi-connect.sh
 
 Copy file vào systemd
 ```sh
-sudo cp home/pi/vietbot_online/src/wifi-connect.service /etc/systemd/system/wifi-connect.service
+sudo cp /home/pi/vietbot_online/src/wifi-connect.service /etc/systemd/system/wifi-connect.service
 ```
 sau đó
 
@@ -40,7 +40,7 @@ Là thành công
 2.2. Cài đặt WiFi-Connect
 
 ```sh
-cp /home/pi/vietbot_online/src
+cd /home/pi/vietbot_online/src
 ```
 Sau đó
 
