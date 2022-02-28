@@ -88,6 +88,7 @@ python3 -m pip install pygame==2.1.0
 4.1.1. Cài đặt Drive cho Modun
 
 Chạy lần lượt các lệnh sau
+
 ```sh
 git clone https://github.com/respeaker/seeed-voicecard.git
 ```
@@ -97,7 +98,7 @@ cd seeed-voicecard
 ```
 sau đó
 ```sh
-sudo ./install.sh --compat-kernel
+sudo ./install.sh
 ```
 chờ cài đặt kết thúc
 
@@ -126,6 +127,12 @@ Vào alxamixer bằng lệnh
 alsamixer
 ```
 bấm F6 để chọn sound card seed, sau đó bấm F5, dùng phím lên trên bàn phím để kéo hết các giá trị lên Max, phím trái, phải để chọn các giá trị Stereo tại các mục tương ứng
+
+Gõ lệnh sau để lưu lại
+
+```sh
+sudo alsactl store
+```
 
 4.1.2. Cài đặt nút bấm cho các Modun Mic Hat
 
