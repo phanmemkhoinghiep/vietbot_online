@@ -3,7 +3,7 @@
 ### STEP1. Cấp quyền cho các File
 
 ```sh
-cp /home/pi/vietbot_online/src
+cd /home/pi/vietbot_online/src
 ```
 Sau đó
 
@@ -28,7 +28,7 @@ sudo cp home/pi/vietbot_online/src/wifi-connect.service /etc/systemd/system/wifi
 sau đó
 
 ```sh
-sudo systemctl enable vietbot.service
+sudo systemctl enable wifi-connect.service
 ```
 Hệ thống sẽ hiện ra
 
