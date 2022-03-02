@@ -282,12 +282,21 @@ data['remote_tts'].append({
     'is_active': False    
 })
 
-
 data['time_playback'] = []
 data['time_playback'].append({
     'time_playback': 60,    
-    'is_active': True    
 })
+
+data['timeout_internet'] = []
+data['timeout_internet'].append({
+    'timeout_internet': 5,    
+})
+
+data['check_url'] = []
+data['check_url'].append({
+    'check_url': 'http://www.google.com/'    
+})
+
 
 data['smh_skill'] = []
 data['smh_skill'].append({
