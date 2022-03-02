@@ -282,21 +282,20 @@ data['remote_tts'].append({
     'is_active': False    
 })
 
-data['time_playback'] = []
-data['time_playback'].append({
-    'time_playback': 60,    
+data['playback_time'] = []
+data['playback_time'].append({
+    'playback_time': 60,    
 })
 
-data['timeout_internet'] = []
-data['timeout_internet'].append({
-    'timeout_internet': 5,    
+data['internet_timeout'] = []
+data['internet_timeout'].append({
+    'internet_timeout': 5,    
 })
 
 data['check_url'] = []
 data['check_url'].append({
     'check_url': 'http://www.google.com/'    
 })
-
 
 data['smh_skill'] = []
 data['smh_skill'].append({
