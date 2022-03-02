@@ -278,10 +278,8 @@ data['time_playback'].append({
 data['smh_skill'] = []
 data['smh_skill'].append({
     'smh_name': 'hass',
-    'smh_url':'https://tieppm.duckdns.org:8123',
-    'smh_token1': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI4YjEwMzAxNmZiMDM0NTU1OTBiZThjYmYxMWU3YmYwNiIsImlhdCI6MTYyNjE2NDU0NCwiZXhwIjoxOTQxNTI0NTQ0fQ.hSDbvUj-cDArHc4Wf8SmH34yMPpMa55J1Wuv2YsQSM0',
-    # 'hass_url':'https://hoangtruong.duckdns.org:8123',
-    # 'hass_token':'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjYmVlMGU5ODk1NDE0NzdlOWIxOWJmOTBkMzFjNzllMiIsImlhdCI6MTY0MjEzNTAwMSwiZXhwIjoxOTU3NDk1MDAxfQ.yFJja3NTZpXjjmcZF8Yw9mEjGTqZEyHEyvmUlvC68VM',
+    'smh_url':'https://abc.duckdns.org:8123',
+    'smh_token1': 'fsdfljlsfjlsdf,
     'smh_token2':'',
     'smh_token3':'',
     'is_active': True        
