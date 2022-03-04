@@ -278,7 +278,6 @@ data['local_tts'].append({
     'is_active': False    
 })
 
-
 data['playback_time'] = []
 data['playback_time'].append({
     'playback_time': 60,    
@@ -291,47 +290,7 @@ data['internet_timeout'].append({
 
 data['check_url'] = []
 data['check_url'].append({
-    'check_url': 'http://www.google.com/'    
-  
-                   
-                       
-                                                
-                       
-                             
-  
-                       
-                                          
-                     
-                              
-  
-                       
-                                            
-                       
-                              
-  
-
-
-                           
-                               
-                       
-                            
-                         
-  
-                               
-                       
-                              
-                         
-  
-                               
-                       
-                             
-                         
-  
-                               
-                       
-                                 
-                         
-})
+    'check_url': 'http://www.google.com/'     
 })
 data['server'] = []
 data['server'].append({
@@ -351,44 +310,44 @@ data['server'].append({
 })
 
 
-data['button_control'] = []
-data['button_control'].append({
+data['button_controll'] = []
+data['button_controll'].append({
+    'is_active': True        
+})
+data['button_data'] = []
+data['button_data'].append({
     'gpio_address': 11,
+    'name': 'btn_up',
     'function': 'volume_up',
     'is_active': True    
 })
-data['button_control'].append({
+data['button_data'].append({
     'gpio_address': 12,
+    'name': 'btn_down',
     'function': 'volume_down',
     'is_active': True    
 })
-data['button_control'].append({
+data['button_data'].append({
     'gpio_address': 13,
+    'name': 'btn_mic',    
     'function': 'toggle_mic',
     'is_active': True    
 })
-data['button_control'].append({
+data['button_data'].append({
     'gpio_address': 14,
+    'name': 'btn_direct',    
     'function': 'direct_command',
     'is_active': True    
 })
-
-
 data['smh_skill'] = []
 data['smh_skill'].append({
     'smh_name': 'hass',
     'smh_url':'https://abc.duckdns.org:8123',
-    'smh_token1': 'sdfsdfdsf',
-                                                                             
-                                                                                                                                                                                                           
-                                                       
-                                                                                                                                                                                                             
+    'smh_token1': 'sdfsdfdsf',                                                                                                                                                                                                        
     'smh_token2':'',
     'smh_token3':'',
     'is_active': True        
 })
-
-
 data['smh_skill'].append({
     'smh_name': 'vcchome',
     'smh_url':'',
@@ -397,8 +356,6 @@ data['smh_skill'].append({
     'smh_token3': 'eyJhbGsfsdLWtRsfsdfbWfvMFTf28g',
     'is_active': False        
 })
-
-
 data['incrase_volume'] = []
 data['incrase_volume'].append({
     'content': 'to lên',
