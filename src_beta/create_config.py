@@ -19,6 +19,15 @@ data['mic'].append({
     'is_active': False        
 })
 data['mic'].append({
+data['mic'].append({
+    'type': 'ReSpeaker 2-Mics Pi HAT with WS281x LED',
+    'led_off_mode': '',
+    'led_off_color': '',
+    'led_think_mode': '',    
+    'led_thing_color': '',            
+    'is_active': False        
+})                                                      
+data['mic'].append({                    
     'type': 'ReSpeaker 4-Mics Pi HAT',
     'led_off_mode': '',
     'led_off_color': '',
@@ -192,31 +201,31 @@ data['continuous_asking'].append({
     'is_active': False
 })
 data['stt_engine'] = []
-data['stt_engine'].append({
+data['local_stt'].append({
     'name': 'stt_gg_free',
     'time_out': 6000,
     'is_active': False    
 })
-data['stt_engine'].append({
+data['local_stt'].append({
     'name': 'stt_gg_cloud',
     'token_file': 'google.json',    
     'time_out': 6000,
     'is_active': True    
 })
-data['stt_engine'].append({
+data['local_stt'].append({
     'name': 'stt_gg_ass',
     'token': '',
     'token_file': '',    
     'time_out': 6000,
     'is_active': False    
 })
-data['stt_engine'].append({
+data['local_stt'].append({
     'name': 'stt_viettel',
     'token': 'SythBY7N8AUsdfsdfdsfpxlyXxzdWRNwYE8N',
     'time_out': 4000,
     'is_active': False    
 })
-data['stt_engine'].append({
+data['local_stt'].append({
     'name': 'stt_fpt',
     'token': '',
     'token_file': '',    
@@ -268,19 +277,7 @@ data['local_tts'].append({
     'pitch': '',    
     'is_active': False    
 })
-data['remote_tts'] = []
-data['remote_tts'].append({
-    'voice_engine': 'tts_fpt',
-    'voice_name': 'ngoclam',
-    'voice_speed': 1.0,
-    'is_active': True    
-})
-data['remote_tts'].append({
-    'voice_engine': 'tts_zalo',
-    'voice_name': '1',
-    'voice_speed': 1.0,
-    'is_active': False    
-})
+
 
 data['playback_time'] = []
 data['playback_time'].append({
@@ -295,17 +292,102 @@ data['internet_timeout'].append({
 data['check_url'] = []
 data['check_url'].append({
     'check_url': 'http://www.google.com/'    
+  
+                   
+                       
+                                                
+                       
+                             
+  
+                       
+                                          
+                     
+                              
+  
+                       
+                                            
+                       
+                              
+  
+
+
+                           
+                               
+                       
+                            
+                         
+  
+                               
+                       
+                              
+                         
+  
+                               
+                       
+                             
+                         
+  
+                               
+                       
+                                 
+                         
 })
+})
+data['server'] = []
+data['server'].append({
+    'server_url': 'http://vietbot.xyz:5000/api',
+    'api_type': 'REST',
+    'is_active': True        
+})
+data['server'].append({
+    'server_url': 'ws://vietbot.xyz:7000',
+    'api_type': 'WS',
+    'is_active': False        
+})
+data['server'].append({
+    'server_url': 'grpc://vietbot.xyz:9000',
+    'api_type': 'gRPC',
+    'is_active': False        
+})
+
+
+data['button_control'] = []
+data['button_control'].append({
+    'gpio_address': 11,
+    'function': 'volume_up',
+    'is_active': True    
+})
+data['button_control'].append({
+    'gpio_address': 12,
+    'function': 'volume_down',
+    'is_active': True    
+})
+data['button_control'].append({
+    'gpio_address': 13,
+    'function': 'toggle_mic',
+    'is_active': True    
+})
+data['button_control'].append({
+    'gpio_address': 14,
+    'function': 'direct_command',
+    'is_active': True    
+})
+
 
 data['smh_skill'] = []
 data['smh_skill'].append({
     'smh_name': 'hass',
     'smh_url':'https://abc.duckdns.org:8123',
     'smh_token1': 'sdfsdfdsf',
+                                                                             
+                                                                                                                                                                                                           
+                                                       
+                                                                                                                                                                                                             
     'smh_token2':'',
     'smh_token3':'',
     'is_active': True        
 })
+
 
 data['smh_skill'].append({
     'smh_name': 'vcchome',
