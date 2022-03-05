@@ -19,7 +19,6 @@ data['mic'].append({
     'is_active': False        
 })
 data['mic'].append({
-data['mic'].append({
     'type': 'ReSpeaker 2-Mics Pi HAT with WS281x LED',
     'led_off_mode': '',
     'led_off_color': '',
@@ -200,7 +199,7 @@ data['continuous_asking'].append({
     'content': 'hỏi liên tục',
     'is_active': False
 })
-data['stt_engine'] = []
+data['local_stt'] = []
 data['local_stt'].append({
     'name': 'stt_gg_free',
     'time_out': 6000,
