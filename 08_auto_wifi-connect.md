@@ -19,7 +19,11 @@ chmod +x start-wifi-connect.sh
 
 ### STEP2.  Cài đặt 
 
-2.1. Cài đặt Service chạy WiFi-Connect khi khởi động
+2.1. Cài đặt File chạy WiFi-Connect
+```sh
+sudo cp /home/pi/vietbot_online/src/start-wifi-connect.sh /home/pi/
+```
+2.2. Cài đặt Service chạy WiFi-Connect khi khởi động
 
 Copy file vào systemd
 ```sh
