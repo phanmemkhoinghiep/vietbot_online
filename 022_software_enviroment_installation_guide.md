@@ -36,8 +36,8 @@ network={
 
 2.1. Cài đặt các thư viện chung cho Vietbot
 
-Chạy lần lượt các lệnh sau
-2.1.1.
+2.1.1.Chạy lần lượt các lệnh sau
+
 ```sh
 sudo apt-get update -y
 ```
@@ -88,6 +88,15 @@ python3 -m pip install pygame==2.1.0
 4.1.1. Cài đặt Drive cho Modun
 
 Chạy lần lượt các lệnh sau
+
+```sh
+sudo apt-get update -y
+```
+sau đó 
+```sh
+sudo apt-get upgrade -y
+```
+sau đó
 
 ```sh
 git clone https://github.com/respeaker/seeed-voicecard.git
@@ -230,44 +239,7 @@ aplay --format=S16_LE --rate=16000 out.raw
 arecord --format=S16_LE --rate=16000 | aplay --format=S16_LE --rate=16000
 ```
 
-### STEP5. Cấu hình thời gian, tối ưu cho Pi, Fix lỗi Audio
-
-5.1. Chạy config
-Chạy lệnh sau
-```sh
-sudo raspi-config
-```
-5.2. Cài đặt thời gian với múi giờ VN
-
-Chọn mục số 5 Localisation Options, Select rồi Enter
-
-Chọn L2 Time Zone
-
-Chọn Asia
-
-Chọn Ho Chi Minh City, OK rồi Enter
-
-5.3. Cài đặt Pi khởi động với Command line để tiết kiệm bộ nhớ
-
-Chọn mục System Options, Select rồi Enter
-
-Chọn S5 Boot/ Auto Login, Select rồi Enter
-
-Chọn B2, OK
-
-5.4. Giảm bộ nhớ RAM dùng cho đồ họa
-
-Chọn mục Performance Options, Select rồi Enter
-
-Chọn P2 GPU Memory, Select rồi Enter
-
-Chọn 16, OK
-
-5.5. Khởi động lại Pi
-
-Khi thoát khỏi Raspi Config, chọn Yes để khởi động lại
-
-5.6 Fix lỗi Audio không chạy tự động của Mic USB
+4.4.4. Fix lỗi Audio không chạy tự động của Mic USB
 
 Chạy lệnh sau
 
@@ -281,3 +253,4 @@ sudo systemctl --system start pulseaudio.service
 sudo cp ./client.conf /etc/pulse/client.conf        
 sudo sed -i '/^pulse-access:/ s/$/root,pi/' /etc/group    
 ```
+
