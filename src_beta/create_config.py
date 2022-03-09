@@ -308,11 +308,6 @@ data['server'].append({
     'is_active': False        
 })
 
-
-data['button_controll'] = []
-data['button_controll'].append({
-    'is_active': True        
-})
 data['button_data'] = []
 data['button_data'].append({
     'gpio_address': 11,
