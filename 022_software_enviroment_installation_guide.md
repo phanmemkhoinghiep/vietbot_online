@@ -3,8 +3,7 @@
 ### STEP1. Cài đặt hệ điều hành Raspbian
 
 1.1. Download Raspberry Pi OS
-Tối ưu cho phần cứng Pi Zero Wireless nên Vietbot chỉ cần bản OS Buster Lite tại trang chủ Pi
-
+Tối ưu cho phần cứng Pi Zero 2 Wireless nên Vietbot chỉ cần bản OS Buster Lite tại trang chủ Pi
 
 1.2. Flash vào thẻ nhớ
 Sử dụng tool của Raspberry hoặc Etcher
@@ -28,7 +27,7 @@ network={
 
 1.4. Truy cập ssh vào Pi Zero Wirless
 
-1.4.1. Cắm thẻ nhớ vào Pi Zero Wireless, chờ Pi boot up xong, xác định IP của Pi từ Modem, Access Pint
+1.4.1. Cắm thẻ nhớ vào Pi Zero 2 Wireless, chờ Pi boot up xong, xác định IP của Pi từ Modem, Access Pint
 
 1.4.2. Sử dụng putty truy cập ssh vào địa chỉ IP của Pi với username là pi, password là raspberry
 
