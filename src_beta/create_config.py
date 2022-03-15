@@ -417,5 +417,12 @@ data['exit'].append({
     'content': 'stop',
     'is_active': True
 })
+data['schedule_alarm'] = []
+data['schedule_alarm'].append({
+    'content': 'đặt lịch'
+})
+data['schedule_alarm'].append({
+    'content': 'hẹn giờ'
+})
 with open('config.json', 'w') as outfile:
     json.dump(data, outfile)
