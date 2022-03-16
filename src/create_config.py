@@ -424,5 +424,167 @@ data['schedule_alarm'].append({
 data['schedule_alarm'].append({
     'content': 'hẹn giờ'
 })
+data['compare_percent'] = []
+data['compare_percent'].append({
+    'type':'music_compare',                
+    'value': 80
+})
+data['music_source'] = []
+data['music_source'].append({
+    'content': 'tìm thấy nhạc',    
+})
+data['music_source'].append({
+    'content': 'phát hiện nhạc',    
+})
+data['no_music_source'] = []
+data['no_music_source'].append({
+    'content': 'không có nhạc',    
+})
+data['no_music_source'].append({
+    'content': 'không phát hiện nhạc',    
+})
+
+data['no_music_source'].append({
+    'content': 'không tìm thấy nhạc',    
+})
+data['no_music_source'].append({
+    'content': 'không có nhạc',    
+})
+data['music_online'] = []
+data['music_online'].append({
+    'content': 'sử dụng nhạc trực tuyến',    
+})
+data['music_online'].append({
+    'content': 'dùng nhạc trực tuyến',    
+})
+data['music_offline'] = []
+data['music_offline'].append({
+    'content': 'sử dụng thẻ nhớ',    
+})
+data['music_offline'].append({
+    'content': 'dùng thẻ nhớ',    
+})
+data['play_music'] = []
+data['play_music'].append({
+    'content': 'phát bài'
+})
+data['play_music'].append({
+    'content': 'phát bài hát'
+})
+data['play_music'].append({
+    'content': 'phát nhạc'
+})
+data['play_music'].append({
+    'content': 'phát bài nhạc'
+})
+data['play_music'].append({
+    'content': 'phát bản nhạc'
+})
+data['play_music'].append({
+    'content': 'play bài'
+})
+data['play_music'].append({
+    'content': 'play bài hát'
+})
+data['play_music'].append({
+    'content': 'play nhạc'
+})
+data['play_music'].append({
+    'content': 'play bài nhạc'
+})
+data['play_music'].append({
+    'content': 'play bản nhạc'
+})
+data['play_music'].append({
+    'content': 'chơi bài'
+})
+data['play_music'].append({
+    'content': 'chơi bài hát'
+})
+data['play_music'].append({
+    'content': 'chơi nhạc'
+})
+data['play_music'].append({
+    'content': 'chơi bài nhạc'
+})
+data['play_music'].append({
+    'content': 'chơi bản nhạc'
+})
+data['play_music'].append({
+    'content': 'bật bài'
+})
+data['play_music'].append({
+    'content': 'bật bài hát'
+})
+data['play_music'].append({
+    'content': 'bật nhạc'
+})
+data['play_music'].append({
+    'content': 'bật bài nhạc'
+})
+data['play_music'].append({
+    'content': 'bật bản nhạc'
+})
+data['play_music'].append({
+    'content': 'hát bài'
+})
+data['play_music'].append({
+    'content': 'hát bài hát'
+})
+data['play_music'].append({
+    'content': 'hát nhạc'
+})
+data['play_music'].append({
+    'content': 'hát bài nhạc'
+})
+data['play_music'].append({
+    'content': 'hát bản nhạc'
+})
+data['download_music'] = []
+data['download_music'].append({
+    'content': 'download bài'
+})
+data['download_music'].append({
+    'content': 'download nhạc'
+})
+data['download_music'].append({
+    'content': 'download bài hát'
+})
+data['download_music'].append({
+    'content': 'download bài nhạc'
+})
+data['download_music'].append({
+    'content': 'download bản nhạc'
+})
+data['download_music'].append({
+    'content': 'tải bài'
+})
+data['download_music'].append({
+    'content': 'tải nhạc'
+})
+data['download_music'].append({
+    'content': 'tải bài hát'
+})
+data['download_music'].append({
+    'content': 'tải bài nhạc'
+})
+data['download_music'].append({
+    'content': 'tải bản nhạc'
+})
+data['download_music'].append({
+    'content': 'tải xuống bài'
+})
+data['download_music'].append({
+    'content': 'tải xuống nhạc'
+})
+data['download_music'].append({
+    'content': 'tải xuống bài hát'
+})
+data['download_music'].append({
+    'content': 'tải xuống bài nhạc'
+})
+data['download_music'].append({
+    'content': 'tải xuống bản nhạc'
+})
 with open('config.json', 'w') as outfile:
     json.dump(data, outfile)
