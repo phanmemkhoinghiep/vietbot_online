@@ -1,1 +1,1 @@
-Nơi chứa file hotword nhánh Beta
+Nơi đặt Hotword file
