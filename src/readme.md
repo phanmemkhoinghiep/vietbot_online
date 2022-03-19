@@ -1,4 +1,4 @@
-### ĐÂY LÀ THƯ MỤC BETA VỚI CÁC TÍNH NĂNG MỚI DÀNH CHO CÁC TESTTER
+### ĐÂY LÀ THƯ MỤC BETA VỚI CÁC TÍNH NĂNG MỚI DÀNH CHO CÁC TESTER
 
 ### STEP1. Cài đặt
 
