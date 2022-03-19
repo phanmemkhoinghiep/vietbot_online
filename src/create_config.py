@@ -310,26 +310,30 @@ data['server'].append({
 
 data['button_data'] = []
 data['button_data'].append({
-    'gpio_address': 11,
-    'name': 'btn_up',
-    'function': 'volume_up',
-    'is_active': True    
-})
-data['button_data'].append({
-    'gpio_address': 12,
-    'name': 'btn_down',
+    'gpio_address': 24,
+    'type': 'touch',
+    'pulse': True,    
     'function': 'volume_down',
-    'is_active': True    
+    'is_active': False    
 })
 data['button_data'].append({
-    'gpio_address': 13,
-    'name': 'btn_mic',    
+    'gpio_address': 25,
+    'type': 'touch',
+    'pulse': True,    
+    'function': 'volume_up',
+    'is_active': False    
+})
+data['button_data'].append({
+    'gpio_address': 22,
+    'type': 'touch',    
+    'pulse': True,    
     'function': 'toggle_mic',
-    'is_active': True    
+    'is_active': False    
 })
 data['button_data'].append({
-    'gpio_address': 14,
-    'name': 'btn_direct',    
+    'gpio_address': 26,
+    'type': 'touch',    
+    'pulse': True,    
     'function': 'direct_command',
     'is_active': True    
 })
