@@ -71,9 +71,15 @@ sudo dphys-swapfile setup
 ```
 Hệ thống sẽ báo lại
 ```sh
-want /var/swap=1024MByte, checking existing: deleting wrong size file (104857600), generating swapfile ... of 1024MBytes
+want /var/swap=1024MByte, checking existing: deleting wrong size file (104857600), generating swapfile ... ```
+
 ```
-Chờ 1 lát cho đến khi quay về dấu nhắc lệnh thì gõ
+Chờ 1 lát cho đến khi hiện
+```sh
+want /var/swap=1024MByte, checking existing: deleting wrong size file (104857600), generating swapfile of 1024MBytes ```
+
+```
+và quay về dấu nhắc lệnh thì gõ
 ```sh
 sudo dphys-swapfile swapon
 ```
