@@ -31,7 +31,7 @@ Chọn mục Performance Options, Select rồi Enter
 
 Chọn P2 GPU Memory, Select rồi Enter
 
-Chọn 16, OK
+Chọn 4, OK
 
 1.5. Khởi động lại Pi
 
