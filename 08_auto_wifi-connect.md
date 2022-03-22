@@ -18,12 +18,16 @@ chmod +x start-wifi-connect.sh
 ```
 
 ### STEP2.  Cài đặt 
+2.1. Cài đặt
 
-2.1. Cài đặt File chạy WiFi-Connect
+```sh
+sudo apt-get install -y -d network-manager
+```
+2.2. Cài đặt File chạy WiFi-Connect
 ```sh
 sudo cp /home/pi/vietbot_online/src/start-wifi-connect.sh /home/pi/
 ```
-2.2. Cài đặt Service chạy WiFi-Connect khi khởi động
+2.3. Cài đặt Service chạy WiFi-Connect khi khởi động
 
 Copy file vào systemd
 ```sh
@@ -41,7 +45,7 @@ Created symlink /etc/systemd/system/multi-user.target.wants/wifi-connect.service
 ```
 Là thành công
 
-2.2. Cài đặt WiFi-Connect
+2.4. Cài đặt WiFi-Connect
 
 ```sh
 cd /home/pi/vietbot_online/src
@@ -53,7 +57,7 @@ nohup bash ./install-wifi-connect.sh & tail -f nohup.out
 ```
 Chờ đến khi nào mất kết nối WiFi với Pi là cài đặt xong
 
-2.3. Rút điện để cho phần cứng khởi động lại
+2.5. Rút điện để cho phần cứng khởi động lại
 
 ### STEP3.  Sử dụng
 
