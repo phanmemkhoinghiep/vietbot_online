@@ -12,8 +12,8 @@ google-api-core==2.7.1
 google-auth==2.6.2
 google-cloud==0.34.0
 google-cloud-speech==2.13.1
-google-cloud-texttospeech 2.11.0
-googleapis-common-protos  1.56.0
+google-cloud-texttospeech==2.11.0
+googleapis-common-protos==1.56.0
 gpiozero==1.6.2
 grpcio==1.44.0
 grpcio-status==1.44.0
