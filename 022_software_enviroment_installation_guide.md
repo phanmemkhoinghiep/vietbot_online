@@ -79,7 +79,18 @@ và
 python3 -m pip install pygame==2.1.0
 
 ```
+3.3. Sửa file
 
+```sh
+sudo nano /home/pi/.local/lib/python3.9/site-packages/pafy/backend_youtube_dl.py
+
+```
+Sau đó tìm đến dòng sau và bổ sung ký tự # đằng trước
+
+```sh
+#        self._dislikes = self._ydl_info['dislike_count']
+
+```
 ### STEP4. Config Mig, Speaker, LED
 
 4.1. Cài đặt cho Modun ReSpeaker 2 Mic Hat hoặc ReSpeaker 4-Mic Array for Raspberry Pi (Nếu ko sử dụng thì bỏ qua)
