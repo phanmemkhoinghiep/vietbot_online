@@ -18,7 +18,7 @@ chmod +x start-wifi-connect.sh
 ```
 
 ### STEP2.  Cài đặt 
-2.1. Cài đặt
+2.1. Cài đặt Network Manager
 
 ```sh
 sudo apt-get install -y -d network-manager
