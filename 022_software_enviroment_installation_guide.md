@@ -91,6 +91,8 @@ Sau đó tìm đến dòng sau và bổ sung ký tự # đằng trước
 #        self._dislikes = self._ydl_info['dislike_count']
 
 ```
+Bấm Ctrl + X, rồi Y để Save lại
+
 ### STEP4. Config Mig, Speaker, LED
 
 4.1. Cài đặt cho Modun ReSpeaker 2 Mic Hat hoặc ReSpeaker 4-Mic Array for Raspberry Pi (Nếu ko sử dụng thì bỏ qua)
