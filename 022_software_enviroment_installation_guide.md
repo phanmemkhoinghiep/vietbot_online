@@ -76,10 +76,14 @@ cd ~
 sau đó
 
 ```sh
-git clone https://github.com/phanmemkhoinghiep/vietbot_online.git
-Cloning into 'vietbot_online'...
+git clone -b beta --single-branch https://github.com/phanmemkhoinghiep/vietbot_online.git
 ```
-Sau đó
+sau đó
+
+```sh
+cd /home/pi/vietbot_online/src
+```
+sau đó
 
 ```sh
 python3 -m pip install -r requirements.txt
