@@ -68,6 +68,19 @@ python3 -m pip install --upgrade pip
 ```
 3.2. Cài đặt các gói Python 
 
+
+```sh
+cd ~ 
+
+```
+sau đó
+
+```sh
+git clone https://github.com/phanmemkhoinghiep/vietbot_online.git
+Cloning into 'vietbot_online'...
+```
+Sau đó
+
 ```sh
 python3 -m pip install -r requirements.txt
 
