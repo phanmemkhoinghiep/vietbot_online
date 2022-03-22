@@ -47,7 +47,7 @@ sudo apt-get upgrade -y
 2.1.2.
 
 ```sh
-sudo apt-get install git python3-pip  libportaudio2  libportaudio-dev libsdl1.2-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libsdl2-mixer-2.0-0 pulseaudio vlc
+sudo apt-get install git python3-pip  sudo apt-get install python3-pip libsdl2-mixer-2.0-0 libportaudio2  libportaudio-dev vlc pulseaudio
 
 ```
 2.2. Khởi động lại
@@ -69,17 +69,11 @@ python3 -m pip install --upgrade pip
 3.2. Cài đặt các gói Python 
 
 ```sh
-
-python3 -m pip install mutagen gTTS PyAudio  pyalsaaudio pyusb  termcolor python-vlc pvporcupine rpi_ws281x google-cloud google-cloud-speech gTTS SpeechRecognition google-cloud-texttospeech Flask
-
-```
-và
-
-```sh
-python3 -m pip install pygame==2.1.0
+python3 -m pip install -r requirements.txt
 
 ```
-3.3. Sửa file
+
+3.3. Sửa fille liên quan tới Skill download và nghe nhạc trực tuyến
 
 ```sh
 sudo nano /home/pi/.local/lib/python3.9/site-packages/pafy/backend_youtube_dl.py
