@@ -31,5 +31,10 @@ cd /home/pi/vietbot_online
 Check xem có file gì mới không
 
 ```sh
-cd /home/pi/vietbot_online
+git fetch
+```
+Download các File mới về
+
+```sh
+git pull
 ```
