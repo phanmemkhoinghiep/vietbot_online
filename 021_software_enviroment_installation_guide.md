@@ -6,6 +6,8 @@
 
 ![GOOGLE DRIVE](https://drive.google.com/file/d/1jY3hx7nrfd-ukf4AeMss5YgZkauzemWO/view?usp=sharing)
 
+hoặc
+
 ![FSHARE](https://www.fshare.vn/file/WUBPA38PI75U)
 
 
