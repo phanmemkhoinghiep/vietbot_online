@@ -47,7 +47,7 @@ sudo apt-get upgrade -y
 2.1.2.
 
 ```sh
-sudo apt-get install git python3-pip  sudo apt-get install python3-pip libsdl2-mixer-2.0-0 libportaudio2  libportaudio-dev vlc pulseaudio
+sudo apt-get install python3-pip libsdl2-mixer-2.0-0 libportaudio2  libportaudio-dev vlc pulseaudio
 
 ```
 2.2. Khởi động lại
