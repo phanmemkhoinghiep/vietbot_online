@@ -1,41 +1,40 @@
 
-### STEP1. Download code về Pi 
+### STEP1. Download code về Pi khi chưa có Code
 
 
 Download Code về Pi theo cách sau:
 1.1. Truy cập vào Git
 Trên console của Pi, sử dụng lệnh sau
+Quay về thư mục gốc
+```sh
+cd ~
+```
+Sau đó
 
 ```sh
-cd ~ 
-
+git clone -b main --single-branch https://github.com/phanmemkhoinghiep/vietbot_online.git
 ```
-1.2. Kết nối vào Git vietbot bằng lệnh sau:
+Chờ cho đến khi kết thúc
 
-```sh
-git clone https://github.com/phanmemkhoinghiep/vietbot_online.git
-Cloning into 'vietbot_online'...
-```
-1.3. Nhập username và password cho github
-
-```sh
-Username for 'https://github.com': your_username
-Password for 'your_password': 
-remote: Enumerating objects: 80, done.
-remote: Counting objects: 100% (80/80), done.
-remote: Compressing objects: 100% (80/80), done.
-remote: Total 1597 (delta 37), reused 0 (delta 0), pack-reused 1517
-Receiving objects: 100% (1597/1597), 74.75 MiB | 819.00 KiB/s, done.
-Resolving deltas: 100% (766/766), done.
-Checking out files: 100% (102/102), done.
-```
-
-### STEP2.  Truy nhập vào thư mục Bot
+### STEP2.  Download code về khi đã có Code, cần cập nhật lại
 
 2.1. Truy cập vào thư mục vietbot_online
 
-Sử dụng lệnh sau
+Quay về thư mục gốc
+```sh
+cd ~
+```
+Sau đó
+```sh
+cd /home/pi/vietbot_online
+```
+Check xem có file gì mới không
 
 ```sh
-cd vietbot_online
+git fetch
+```
+Download các File mới về
+
+```sh
+git pull
 ```
