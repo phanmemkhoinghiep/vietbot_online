@@ -2,7 +2,7 @@
 
 ### STEP1. Download bộ Image cho Raspberry Pi đã cài đặt sẵn
 
-##1.1. Download bộ Image cho Raspberry Pi đã cài đặt sẵn cho Respeaker 2 Mic Hat
+1.1. Download bộ Image cho Raspberry Pi đã cài đặt sẵn cho Respeaker 2 Mic Hat
 
 ```sh
 https://www.fshare.vn/file/
