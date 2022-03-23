@@ -130,7 +130,12 @@ Chạy lệnh sau
 ```sh
 sudo cp /home/pi/.asoundrc /etc/asound.conf
 ```
+5.2.4. Đưa Account đang dùng (Ví dụ pi) vào group root
 
+Chạy lệnh sau
+```sh
+sudo usermod -aG root pi
+```
 Tiếp đó chuyển qua 
 
 ![CÀI ĐẶT, CẬP NHẬT PHẦN MỀM](https://github.com/phanmemkhoinghiep/vietbot_online/blob/main/03_software_install_update_guide.md)  
