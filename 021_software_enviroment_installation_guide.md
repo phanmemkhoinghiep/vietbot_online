@@ -62,7 +62,7 @@ sudo raspi-config
 
 4.2.5. Chọn Yes để Reboot
 
-### STEP4. Khai báo Mic
+### STEP5. Khai báo Mic
 
 5.1. Khai báo Mic 2 Hat, Mic 4Hat
 
