@@ -35,7 +35,6 @@ network={
 
 3.5. Tạo một file rỗng có tên là SSH
 
-
 ### STEP4. Sử dụng
 
 4.1. Sử dụng
