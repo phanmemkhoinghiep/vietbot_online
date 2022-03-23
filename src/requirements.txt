@@ -25,6 +25,7 @@ MarkupSafe==2.1.1
 mutagen==1.45.1
 pafy==0.5.5
 pip==20.3.4
+pixel-ring==0.1.0
 proto-plus==1.20.3
 protobuf==3.19.4
 pvporcupine==2.1.2
