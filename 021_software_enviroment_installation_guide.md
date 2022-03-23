@@ -37,9 +37,9 @@ network={
 
 3.5. Tạo một file rỗng có tên là SSH
 
-### STEP4. Sử dụng
+### STEP4. Kết nối và điều chỉnh
 
-4.1. Sử dụng
+4.1. Kết nối
 
 4.1.1. Cắm thẻ nhớ vào Pi Zero 2 W/Pi 3B+/Pi4 và boot lên
 
@@ -61,6 +61,75 @@ sudo raspi-config
 4.2.4. Chọn OK và chờ vài s
 
 4.2.5. Chọn Yes để Reboot
+
+# STEP5. Khai báo Mic
+
+5.1. Khai báo Mic 2 Hat, Mic 4Hat
+
+5.1.1. Tạo một file rỗng asound.conf tại thư mục /home/pi như sau
+
+```sh
+sudo nano /home/pi/.asoundrc
+```
+Gõ space bar sau đó gõ backspace
+Bấm lần lượt Ctrl + X, sau đó Y rồi Enter
+
+5.1.2. Copy file thiết lập cho mọi account (Nếu chỉ dùng Account Pi thì bỏ qua bước này)
+
+Chạy lệnh sau
+```sh
+sudo cp /home/pi/.asoundrc /etc/asound.conf
+```
+
+5.2. Khai báo Mic USB (Mic USB thường và Mic Respeaker USB)
+
+5.2.1. Thống kê ID của Mic USB và Loa 
+
+Chạy lệnh sau để biết ID của Mic USB
+```sh
+arecord -l
+```
+sau đó chạy lệnh sau để biết ID của Loa
+
+```sh
+aplay -l
+```
+Lưu lại thông tin về card_id và device_id ở mỗi kết quả lệnh
+
+5.2.2. Khai báo cho Mic USB (Nếu ko sử dụng Mic USB thì bỏ qua phần này)
+
+```sh
+sudo nano /home/pi/.asoundrc
+```
+Cửa sổ nano hiện lên, paste dòng sau, thay thế <card_id> và <device_id> bằng kết quả đã lưu ví dụ 0:0 hoặc 1:0 hoặc 1:1:
+
+```sh
+pcm.!default {
+  type asym
+  capture.pcm "mic"  
+  playback.pcm "speaker"  
+}
+pcm.mic {
+  type plug
+  slave {
+    pcm "hw:<card_id>,<device_id>"
+  }
+}
+pcm.speaker {
+  type plug
+  slave {
+    pcm "hw:<card_id>,<device_id>"
+  }
+}
+```
+Bấm lần lượt Ctrl + X, sau đó Y rồi Enter
+
+5.2.3. Copy file thiết lập cho mọi account (Nếu chỉ dùng Account Pi thì bỏ qua bước này)
+
+Chạy lệnh sau
+```sh
+sudo cp /home/pi/.asoundrc /etc/asound.conf
+```
 
 Tiếp đó chuyển qua 
 
