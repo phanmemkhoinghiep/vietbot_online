@@ -3,10 +3,12 @@
 ### STEP1. Download bộ Image cho Raspberry Pi đã cài đặt sẵn
 
 1.1. Download bộ Image cho Raspberry Pi đã cài đặt sẵn Drive cho Respeaker 2 Mic Hat, Respeaker USB Mic và Mic USB thường tại Link sau
-```sh
-https://drive.google.com/file/d/1jY3hx7nrfd-ukf4AeMss5YgZkauzemWO/view?usp=sharing
 
-```
+![GOOGLE DRIVE](https://drive.google.com/file/d/1jY3hx7nrfd-ukf4AeMss5YgZkauzemWO/view?usp=sharing)
+
+![FSHARE](https://www.fshare.vn/file/WUBPA38PI75U)
+
+
 ### STEP2. Ghi vào thẻ SD
 
 2.1. Dùng Win32IMG để ghi vào thẻ nhớ SD
@@ -60,4 +62,4 @@ sudo raspi-config
 
 4.2.5. Chọn Yes để Reboot
 
-Tiếp đó chuyển qua Guide 05
+Tiếp đó chuyển qua ![CÀI ĐẶT, CẬP NHẬT PHẦN MỀM](https://github.com/phanmemkhoinghiep/vietbot_online/blob/main/03_software_install_guide.md)  
