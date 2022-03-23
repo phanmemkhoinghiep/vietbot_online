@@ -2,17 +2,7 @@
 
 ### STEP1. Download bộ Image cho Raspberry Pi đã cài đặt sẵn
 
-1.1. Download bộ Image cho Raspberry Pi đã cài đặt sẵn cho Respeaker 2 Mic Hat
-
-```sh
-https://www.fshare.vn/file/
-```
-hoặc
-```sh
-https://drive.google.com/file/d/
-```
-
-1.2. Download bộ Image cho Raspberry Pi đã cài đặt sẵn cho Respeaker USB Mic tại Link sau
+1.1. Download bộ Image cho Raspberry Pi đã cài đặt sẵn Drive cho Respeaker 2 Mic Hat, Respeaker USB Mic và Mic USB thường tại Link sau
 ```sh
 https://drive.google.com/file/d/11kG4ACAep-BmTR1BHFrAEYOqEBVtaR0v/view?usp=sharing
 
@@ -48,11 +38,11 @@ network={
 
 4.1. Sử dụng
 
-4.1.1. Cắm thẻ nhớ vào Pi Zero W và boot lên
+4.1.1. Cắm thẻ nhớ vào Pi Zero 2 W/Pi 3B+/Pi4 và boot lên
 
 4.1.2. Sử dụng SSH để truy cập từ xa vào Console
 
-4.1.3. Nhập Username và password đăng nhập theo mặc định của raspbian (pi/raspberry)
+4.1.3. Nhập Username và password đăng nhập (pi/vietbot)
 
 4.2. Nâng dung lượng của OS cho Full thẻ
 
@@ -69,3 +59,5 @@ sudo raspi-config
 4.2.4. Chọn OK và chờ vài s
 
 4.2.5. Chọn Yes để Reboot
+
+Tiếp đó chuyển qua Guide 05
