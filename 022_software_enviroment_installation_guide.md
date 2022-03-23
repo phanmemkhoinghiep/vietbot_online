@@ -173,7 +173,7 @@ python3 -m pip install rpi.gpio
 ```
 4.2. Cài đặt cho Mic USB và Loa
 
-4.2.1. Thống kê ID của Mic USB và Loa (Chỉ dành cho 1/sử dụng Mic USB Soundcard USB hoặc 2/sử dụng phiên bản Pi có nhiều hơn 1 Sound card hoặc cả 1/ và 2/)
+4.2.1. Thống kê ID của Mic USB và Loa
 
 Chạy lệnh sau để biết ID của Mic USB
 ```sh
@@ -252,7 +252,7 @@ sudo reboot
 
 Chạy lệnh sau
 ```sh
-sudo usermod -aG root account_name
+sudo usermod -aG root pi
 ```
 
 4.4. Test loa và mic
