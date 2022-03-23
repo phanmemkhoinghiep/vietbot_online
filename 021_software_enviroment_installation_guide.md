@@ -4,11 +4,11 @@
 
 1.1. Download bộ Image cho Raspberry Pi đã cài đặt sẵn Drive cho Respeaker 2 Mic Hat, Respeaker USB Mic và Mic USB thường tại Link sau
 
-(https://drive.google.com/file/d/1jY3hx7nrfd-ukf4AeMss5YgZkauzemWO/view?usp=sharing)
+[GOOGLE DRIVE](https://drive.google.com/file/d/1jY3hx7nrfd-ukf4AeMss5YgZkauzemWO/view?usp=sharing)
 
 hoặc
 
-(https://www.fshare.vn/file/WUBPA38PI75U)
+[FSHARE](https://www.fshare.vn/file/WUBPA38PI75U)
 
 
 ### STEP2. Ghi vào thẻ SD
