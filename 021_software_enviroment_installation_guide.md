@@ -52,7 +52,6 @@ network={
 
 ```sh
 sudo raspi-config
-}
 ```
 4.2.2. Chọn Advance
 
