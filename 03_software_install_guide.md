@@ -28,3 +28,8 @@ Sau đó
 ```sh
 cd /home/pi/vietbot_online
 ```
+Check xem có file gì mới không
+
+```sh
+cd /home/pi/vietbot_online
+```
