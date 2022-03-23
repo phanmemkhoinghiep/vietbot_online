@@ -26,5 +26,5 @@ cd ~
 ```
 Sau đó
 ```sh
-cd vietbot_online
+cd /home/pi/vietbot_online
 ```
