@@ -139,3 +139,4 @@ sudo usermod -aG root pi
 Tiếp đó chuyển qua 
 
 ![CÀI ĐẶT, CẬP NHẬT PHẦN MỀM](https://github.com/phanmemkhoinghiep/vietbot_online/blob/main/03_software_install_update_guide.md) 
+
