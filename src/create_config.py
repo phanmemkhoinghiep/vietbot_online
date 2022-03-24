@@ -335,7 +335,7 @@ data['button_data'].append({
     'type': 'touch',    
     'pulse': True,    
     'function': 'direct_command',
-    'is_active': True    
+    'is_active': False    
 })
 data['smh_skill'] = []
 data['smh_skill'].append({
