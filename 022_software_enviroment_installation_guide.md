@@ -255,7 +255,7 @@ Chạy lệnh sau
 sudo usermod -aG root pi
 ```
 
-4.4. Test loa và mic
+4.4. Test loa và mic sau khi cài
 
 4.4.1. Test loa
 Chạy lệnh sau
