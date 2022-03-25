@@ -24,6 +24,13 @@ Quay về thư mục gốc
 ```sh
 cd ~
 ```
+Sau đó kiểm tra chính xác xem có trong nhánh beta hay không
+
+```sh
+pi@vietbot:~/vietbot_online/src $ git branch -vv
+* beta b7da00f [origin/beta] Update 03_software_install_guide.md
+```
+
 Sau đó
 ```sh
 cd /home/pi/vietbot_online/src
