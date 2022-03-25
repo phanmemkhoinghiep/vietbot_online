@@ -45,7 +45,38 @@ Chú ý muốn giữ lại create_config.py cần đổi tên sang create_config
 Download các File mới về
 
 ```sh
-git pull
+pi@vietbot:~/vietbot_online/src $ git pull
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+Updating b7da00f..e33167d
+Fast-forward
+ 021_software_enviroment_installation_guide.md                       |   3 ++-
+ 022_software_enviroment_installation_guide.md                       |   6 ++---
+ 03_software_install_guide.md => 03_software_install_update_guide.md |  31 +++++++++++++++++++++++--
+ 07_updating_guide.md                                                |  63 ---------------------------------------------------
+ README.md                                                           |  16 ++++++++++++-
+ requirements.txt                                                    |   5 ----
+ src/create_config.py                                                |   2 +-
+ src/led_controll.so                                                 | Bin 1713052 -> 1713116 bytes
+ src/local_controll.so                                               | Bin 693048 -> 827620 bytes
+ src/main.so                                                         | Bin 5441808 -> 5405524 bytes
+ src/requirements.txt                                                |   1 +
+ src/schedule_controll.so                                            | Bin 271520 -> 0 bytes
+ 12 files changed, 51 insertions(+), 76 deletions(-)
+ rename 03_software_install_guide.md => 03_software_install_update_guide.md (52%)
+ delete mode 100644 07_updating_guide.md
+ delete mode 100644 requirements.txt
+ delete mode 100644 src/schedule_controll.so
 ```
 ### STEP3. Cài đặt các gói Python
 
