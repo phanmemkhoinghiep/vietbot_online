@@ -38,3 +38,18 @@ Download các File mới về
 ```sh
 git pull
 ```
+### STEP3. Cài đặt các gói Python
+
+3.1. Nâng cấp PIP
+
+Chạy lần lượt các lệnh sau
+```sh
+python3 -m pip install --upgrade pip
+
+```
+3.2. Cài đặt các gói Python 
+
+```sh
+python3 -m pip install -r requirements.txt
+
+```
