@@ -46,6 +46,31 @@ Download các File mới về
 
 ```sh
 pi@vietbot:~/vietbot_online/src $ git pull
+```
+
+Nếu ra thông báo sau
+```sh
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+error: Your local changes to the following files would be overwritten by merge:
+        src/main.so
+Please commit your changes or stash them before you merge.
+Aborting
+```
+Là do đã copy file main.so từ bên ngoài chứ ko phải từ lần git trước cần phải xóa hoặc đổi tên file này, sau đó chạy lại lệnh
+
+Nếu ra thông báo sau
+```sh
 hint: Pulling without specifying how to reconcile divergent branches is
 hint: discouraged. You can squelch this message by running one of the following
 hint: commands sometime before your next pull:
@@ -78,7 +103,9 @@ Fast-forward
  delete mode 100644 requirements.txt
  delete mode 100644 src/schedule_controll.so
 ```
-### STEP3. Cài đặt các gói Python
+là đã thành công
+
+### STEP3. Cài đặt các gói Python do nâng cấp tính năng
 
 3.1. Nâng cấp PIP
 
