@@ -1,8 +1,6 @@
 
 ### STEP1. Download code về Pi khi chưa có Code
-
-
-Download Code về Pi theo cách sau:
+Download Code về phần cứng raspberry theo cách sau:
 1.1. Truy cập vào Git
 Trên console của Pi, sử dụng lệnh sau
 Quay về thư mục gốc
@@ -10,7 +8,6 @@ Quay về thư mục gốc
 cd ~
 ```
 Sau đó
-
 ```sh
 git clone -b beta --single-branch https://github.com/phanmemkhoinghiep/vietbot_online.git
 ```
