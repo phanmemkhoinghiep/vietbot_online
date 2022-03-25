@@ -26,7 +26,7 @@ cd ~
 ```
 Sau đó
 ```sh
-cd /home/pi/vietbot_online
+cd /home/pi/vietbot_online/src
 ```
 Check xem có file gì mới không
 
