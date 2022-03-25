@@ -40,6 +40,8 @@ Check xem có file gì mới không
 ```sh
 git fetch
 ```
+Chú ý muốn giữ lại create_config.py cần đổi tên sang create_config.py.old nếu ko sẽ bị ghi đè
+
 Download các File mới về
 
 ```sh
