@@ -20,10 +20,10 @@ data['mic'].append({
 })
 data['mic'].append({
     'type': 'ReSpeaker 2-Mics Pi HAT with WS281x LED',
-    'led_off_mode': '',
-    'led_off_color': '',
-    'led_think_mode': '',    
-    'led_thing_color': '',            
+    'led_off_mode': 2,
+    'led_off_color': 'FFFF99',
+    'led_wakeup_mode': 2,
+    'led_wakeup_color': '33FFFF',        
     'is_active': False        
 })                                                      
 data['mic'].append({                    
@@ -36,10 +36,10 @@ data['mic'].append({
 })
 data['mic'].append({
     'type': 'ReSpeaker Mic Array v2.0',
-    'led_off_mode': 1,
-    'led_off_color': 0xFFFF99,
+    'led_off_mode': 2,
+    'led_off_color': 'FFFF99',
     'led_wakeup_mode': 2,
-    'led_wakeup_color': 0x33FFFF,    
+    'led_wakeup_color': '33FFFF',    
     'is_active': False        
 })
 data['mic'].append({
