@@ -142,7 +142,7 @@ sudo reboot
 ```
 Sau khi khởi động lại, đăng nhập lại vào console
 
-sau đó tạo một file rỗng asound.conf tại thư mục /home/pi như sau
+sau đó tạo một file rỗng .asoundrc tại thư mục /home/pi như sau
 
 ```sh
 sudo nano /home/pi/.asoundrc
@@ -151,7 +151,14 @@ Gõ space bar sau đó gõ backspace
 
 Bấm lần lượt Ctrl + X, sau đó Y rồi Enter
 
-4.1.2. Cài đặt âm lượng
+4.1.2. Copy file thiết lập cho mọi account 
+
+Chạy lệnh sau
+```sh
+sudo cp /home/pi/.asoundrc /etc/asound.conf
+```
+
+4.1.3. Cài đặt âm lượng
 
 Vào alxamixer bằng lệnh
 
@@ -186,13 +193,9 @@ aplay -l
 ```
 Lưu lại thông tin về card_id và device_id ở mỗi kết quả lệnh
 
-4.2.2. Khai báo cho Mic USB (Nếu ko sử dụng Mic USB thì bỏ qua phần này)
+4.2.2. Khai báo cho Mic USB
 
 Chạy lệnh sau 
-```sh
-sudo apt-get install pulseaudio -y
-```
-sau đó 
 
 ```sh
 sudo nano /home/pi/.asoundrc
@@ -220,7 +223,7 @@ pcm.speaker {
 ```
 Bấm lần lượt Ctrl + X, sau đó Y rồi Enter
 
-4.2.3. Copy file thiết lập cho mọi account (Nếu chỉ dùng Account Pi thì bỏ qua bước này)
+4.2.3. Copy file thiết lập cho mọi account 
 
 Chạy lệnh sau
 ```sh
