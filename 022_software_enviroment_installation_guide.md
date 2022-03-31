@@ -47,7 +47,7 @@ sudo apt-get upgrade -y
 2.1.2.
 
 ```sh
-sudo apt-get install git python3-pip  libportaudio2  libportaudio-dev libsdl1.2-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libsdl2-mixer-2.0-0 pulseaudio vlc
+sudo apt-get install git python3-pip libsdl2-mixer-2.0-0 libportaudio2  libportaudio-dev vlc pulseaudio -y
 
 ```
 2.2. Khởi động lại
@@ -68,17 +68,41 @@ python3 -m pip install --upgrade pip
 ```
 3.2. Cài đặt các gói Python 
 
-```sh
-
-python3 -m pip install mutagen gTTS PyAudio  pyalsaaudio pyusb  termcolor python-vlc pvporcupine rpi_ws281x google-cloud google-cloud-speech gTTS SpeechRecognition google-cloud-texttospeech Flask
-
-```
-và
 
 ```sh
-python3 -m pip install pygame==2.1.0
+cd ~ 
 
 ```
+sau đó
+
+```sh
+git clone -b beta --single-branch https://github.com/phanmemkhoinghiep/vietbot_online.git
+```
+sau đó
+
+```sh
+cd /home/pi/vietbot_online/src
+```
+sau đó
+
+```sh
+python3 -m pip install -r requirements.txt
+
+```
+
+3.3. Sửa fille liên quan tới Skill download và nghe nhạc trực tuyến
+
+```sh
+sudo nano /home/pi/.local/lib/python3.9/site-packages/pafy/backend_youtube_dl.py
+
+```
+Sau đó tìm đến dòng sau và bổ sung ký tự # đằng trước
+
+```sh
+#        self._dislikes = self._ydl_info['dislike_count']
+
+```
+Bấm Ctrl + X, rồi Y để Save lại
 
 ### STEP4. Config Mig, Speaker, LED
 
@@ -118,7 +142,7 @@ sudo reboot
 ```
 Sau khi khởi động lại, đăng nhập lại vào console
 
-sau đó tạo một file rỗng asound.conf tại thư mục /home/pi như sau
+sau đó tạo một file rỗng .asoundrc tại thư mục /home/pi như sau
 
 ```sh
 sudo nano /home/pi/.asoundrc
@@ -127,7 +151,14 @@ Gõ space bar sau đó gõ backspace
 
 Bấm lần lượt Ctrl + X, sau đó Y rồi Enter
 
-4.1.2. Cài đặt âm lượng
+4.1.2. Copy file thiết lập cho mọi account 
+
+Chạy lệnh sau
+```sh
+sudo cp /home/pi/.asoundrc /etc/asound.conf
+```
+
+4.1.3. Cài đặt âm lượng
 
 Vào alxamixer bằng lệnh
 
@@ -149,7 +180,7 @@ python3 -m pip install rpi.gpio
 ```
 4.2. Cài đặt cho Mic USB và Loa
 
-4.2.1. Thống kê ID của Mic USB và Loa (Chỉ dành cho 1/sử dụng Mic USB Soundcard USB hoặc 2/sử dụng phiên bản Pi có nhiều hơn 1 Sound card hoặc cả 1/ và 2/)
+4.2.1. Thống kê ID của Mic USB và Loa
 
 Chạy lệnh sau để biết ID của Mic USB
 ```sh
@@ -162,13 +193,9 @@ aplay -l
 ```
 Lưu lại thông tin về card_id và device_id ở mỗi kết quả lệnh
 
-4.2.2. Khai báo cho Mic USB (Nếu ko sử dụng Mic USB thì bỏ qua phần này)
+4.2.2. Khai báo cho Mic USB
 
 Chạy lệnh sau 
-```sh
-sudo apt-get install pulseaudio -y
-```
-sau đó 
 
 ```sh
 sudo nano /home/pi/.asoundrc
@@ -196,7 +223,7 @@ pcm.speaker {
 ```
 Bấm lần lượt Ctrl + X, sau đó Y rồi Enter
 
-4.2.3. Copy file thiết lập cho mọi account (Nếu chỉ dùng Account Pi thì bỏ qua bước này)
+4.2.3. Copy file thiết lập cho mọi account 
 
 Chạy lệnh sau
 ```sh
@@ -228,10 +255,10 @@ sudo reboot
 
 Chạy lệnh sau
 ```sh
-sudo usermod -aG root account_name
+sudo usermod -aG root pi
 ```
 
-4.4. Test loa và mic
+4.4. Test loa và mic sau khi cài
 
 4.4.1. Test loa
 Chạy lệnh sau
