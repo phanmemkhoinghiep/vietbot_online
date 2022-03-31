@@ -20,10 +20,10 @@ data['mic'].append({
 })
 data['mic'].append({
     'type': 'ReSpeaker 2-Mics Pi HAT with WS281x LED',
-    'led_off_mode': '',
-    'led_off_color': '',
-    'led_think_mode': '',    
-    'led_thing_color': '',            
+    'led_off_mode': 2,
+    'led_off_color': 'FFFF99',
+    'led_wakeup_mode': 2,
+    'led_wakeup_color': '33FFFF',        
     'is_active': False        
 })                                                      
 data['mic'].append({                    
@@ -36,10 +36,10 @@ data['mic'].append({
 })
 data['mic'].append({
     'type': 'ReSpeaker Mic Array v2.0',
-    'led_off_mode': 1,
-    'led_off_color': 0xFFFF99,
+    'led_off_mode': 2,
+    'led_off_color': 'FFFF99',
     'led_wakeup_mode': 2,
-    'led_wakeup_color': 0x33FFFF,    
+    'led_wakeup_color': '33FFFF',    
     'is_active': False        
 })
 data['mic'].append({
@@ -310,28 +310,32 @@ data['server'].append({
 
 data['button_data'] = []
 data['button_data'].append({
-    'gpio_address': 11,
-    'name': 'btn_up',
-    'function': 'volume_up',
-    'is_active': True    
-})
-data['button_data'].append({
-    'gpio_address': 12,
-    'name': 'btn_down',
+    'gpio_address': 24,
+    'type': 'touch',
+    'pulse': True,    
     'function': 'volume_down',
-    'is_active': True    
+    'is_active': False    
 })
 data['button_data'].append({
-    'gpio_address': 13,
-    'name': 'btn_mic',    
+    'gpio_address': 25,
+    'type': 'touch',
+    'pulse': True,    
+    'function': 'volume_up',
+    'is_active': False    
+})
+data['button_data'].append({
+    'gpio_address': 22,
+    'type': 'touch',    
+    'pulse': True,    
     'function': 'toggle_mic',
-    'is_active': True    
+    'is_active': False    
 })
 data['button_data'].append({
-    'gpio_address': 14,
-    'name': 'btn_direct',    
+    'gpio_address': 26,
+    'type': 'touch',    
+    'pulse': True,    
     'function': 'direct_command',
-    'is_active': True    
+    'is_active': False    
 })
 data['smh_skill'] = []
 data['smh_skill'].append({
@@ -423,6 +427,399 @@ data['schedule_alarm'].append({
 })
 data['schedule_alarm'].append({
     'content': 'hẹn giờ'
+})
+data['compare_percent'] = []
+data['compare_percent'].append({
+    'type':'music_compare',                
+    'value': 80
+})
+data['music_source'] = []
+data['music_source'].append({
+    'content': 'tìm thấy nhạc',    
+})
+data['music_source'].append({
+    'content': 'phát hiện nhạc',    
+})
+data['no_music_source'] = []
+data['no_music_source'].append({
+    'content': 'không có nhạc',    
+})
+data['no_music_source'].append({
+    'content': 'không phát hiện nhạc',    
+})
+
+data['no_music_source'].append({
+    'content': 'không tìm thấy nhạc',    
+})
+data['no_music_source'].append({
+    'content': 'không có nhạc',    
+})
+data['music_online'] = []
+data['music_online'].append({
+    'content': 'sử dụng nhạc trực tuyến',    
+})
+data['music_online'].append({
+    'content': 'dùng nhạc trực tuyến',    
+})
+data['music_offline'] = []
+data['music_offline'].append({
+    'content': 'sử dụng thẻ nhớ',    
+})
+data['music_offline'].append({
+    'content': 'dùng thẻ nhớ',    
+})
+data['play_music'] = []
+data['play_music'].append({
+    'content': 'phát bài'
+})
+data['play_music'].append({
+    'content': 'phát bài hát'
+})
+data['play_music'].append({
+    'content': 'phát nhạc'
+})
+data['play_music'].append({
+    'content': 'phát bài nhạc'
+})
+data['play_music'].append({
+    'content': 'phát bản nhạc'
+})
+data['play_music'].append({
+    'content': 'play bài'
+})
+data['play_music'].append({
+    'content': 'play bài hát'
+})
+data['play_music'].append({
+    'content': 'play nhạc'
+})
+data['play_music'].append({
+    'content': 'play bài nhạc'
+})
+data['play_music'].append({
+    'content': 'play bản nhạc'
+})
+data['play_music'].append({
+    'content': 'chơi bài'
+})
+data['play_music'].append({
+    'content': 'chơi bài hát'
+})
+data['play_music'].append({
+    'content': 'chơi nhạc'
+})
+data['play_music'].append({
+    'content': 'chơi bài nhạc'
+})
+data['play_music'].append({
+    'content': 'chơi bản nhạc'
+})
+data['play_music'].append({
+    'content': 'bật bài'
+})
+data['play_music'].append({
+    'content': 'bật bài hát'
+})
+data['play_music'].append({
+    'content': 'bật nhạc'
+})
+data['play_music'].append({
+    'content': 'bật bài nhạc'
+})
+data['play_music'].append({
+    'content': 'bật bản nhạc'
+})
+data['play_music'].append({
+    'content': 'hát bài'
+})
+data['play_music'].append({
+    'content': 'hát bài hát'
+})
+data['play_music'].append({
+    'content': 'hát nhạc'
+})
+data['play_music'].append({
+    'content': 'hát bài nhạc'
+})
+data['play_music'].append({
+    'content': 'hát bản nhạc'
+})
+data['download_music'] = []
+data['download_music'].append({
+    'content': 'download bài'
+})
+data['download_music'].append({
+    'content': 'download nhạc'
+})
+data['download_music'].append({
+    'content': 'download bài hát'
+})
+data['download_music'].append({
+    'content': 'download bài nhạc'
+})
+data['download_music'].append({
+    'content': 'download bản nhạc'
+})
+data['download_music'].append({
+    'content': 'tải bài'
+})
+data['download_music'].append({
+    'content': 'tải nhạc'
+})
+data['download_music'].append({
+    'content': 'tải bài hát'
+})
+data['download_music'].append({
+    'content': 'tải bài nhạc'
+})
+data['download_music'].append({
+    'content': 'tải bản nhạc'
+})
+data['download_music'].append({
+    'content': 'tải xuống bài'
+})
+data['download_music'].append({
+    'content': 'tải xuống nhạc'
+})
+data['download_music'].append({
+    'content': 'tải xuống bài hát'
+})
+data['download_music'].append({
+    'content': 'tải xuống bài nhạc'
+})
+data['download_music'].append({
+    'content': 'tải xuống bản nhạc'
+})
+data['all'] = []
+data['all'].append({
+    'content': 'tất cả'
+})
+data['all'].append({
+    'content': 'hết cả'
+})
+data['all'].append({
+    'content': 'toàn bộ'
+})
+data['all'].append({
+    'content': 'toàn bộ'
+})
+data['all'].append({
+    'content': 'đầy đủ'
+})
+data['single'] = []
+data['single'].append({
+    'content': 'duy nhất'
+})
+data['single'].append({
+    'content': 'chỉ một'
+})
+data['single'].append({
+    'content': 'riêng mỗi'
+})
+data['single'].append({
+    'content': 'duy mỗi'
+})
+data['single'].append({
+    'content': 'mỗi một'
+})
+data['single'].append({
+    'content': 'duy nhất'
+})
+data['action_on'] = []
+data['action_on'].append({
+    'content': 'bật'
+})
+data['action_on'].append({
+    'content': 'lên'
+})
+data['action_off'] = []
+data['action_off'].append({
+    'content': 'tắt'
+})
+data['action_off'].append({
+    'content': 'ngắt'
+})
+data['action_open'] = []
+data['action_open'].append({
+    'content': 'mở'
+})
+data['action_close'] = []
+data['action_close'].append({
+    'content': 'đóng'
+})
+data['action_check'] = []
+data['action_check'].append({
+    'content': 'kiểm tra'
+})
+data['action_check'].append({
+    'content': 'hiển thị'
+})
+data['action_check'].append({
+    'content': 'trạng thái'
+})
+data['action_check'].append({
+    'content': 'thông số'
+})
+data['request_enable'] = []
+data['request_enable'].append({
+    'content': 'kích hoạt'
+})
+data['request_enable'].append({
+    'content': 'thực hiện'
+})
+data['request_enable'].append({
+    'content': 'thi hành'
+})
+data['request_disable'] = []
+data['request_disable'].append({
+    'content': 'vô hiệu'
+})
+data['request_disable'].append({
+    'content': 'hủy bỏ'
+})
+data['unit'] = []
+data['unit'].append({
+    'code': 'clients',    
+    'name': 'kết nối'    
+})
+data['unit'].append({
+    'code': '%',    
+    'name': 'phần trăm'    
+})
+data['unit'].append({
+    'code': 'MiB',    
+    'name': 'mê bai'    
+})
+data['unit'].append({
+    'code': '°C',    
+    'name': 'độ xê'    
+})
+data['unit'].append({
+    'code': 'min',    
+    'name': 'phút'    
+})
+data['unit'].append({
+    'code': 's',    
+    'name': 'giây'    
+})
+data['unit'].append({
+    'code': 'km/h',    
+    'name': 'ki lô mét trên giờ'    
+})
+data['unit'].append({
+    'code': 'Hz',    
+    'name': 'héc'    
+})
+data['unit'].append({
+    'code': 'V',    
+    'name': 'vôn'    
+})
+data['unit'].append({
+    'code': 'A',    
+    'name': 'am pe'    
+})
+data['unit'].append({
+    'code': 'kW',    
+    'name': 'ki lô oát'    
+})
+data['unit'].append({
+    'code': 'Wh',    
+    'name': 'oát giờ'    
+})
+data['unit'].append({
+    'code': 'kWh',    
+    'name': 'kilo oát giờ'    
+})
+data['unit'].append({
+    'code': 'L',    
+    'name': 'lít'    
+})
+data['at_now'] = []
+data['at_now'].append({
+    'content': 'bây giờ'
+})
+data['at_now'].append({
+    'content': 'lập tức'
+})
+data['at_now'].append({
+    'content': 'lúc này'
+})
+data['time_now'] = []
+data['time_now'].append({
+    'content': 'mấy giờ'
+})
+data['light'] = []
+data['light'].append({
+    'content': 'đèn'
+})
+data['light'].append({
+    'content': 'bóng điện'
+})
+data['light'].append({
+    'content': 'đèn điện'
+})
+data['switch'] = []
+data['switch'].append({
+    'content': 'công tắc'
+})
+data['socket'] = []
+data['socket'].append({
+    'content': 'ổ cắm'
+})
+data['socket'].append({
+    'content': 'ổ điện'
+})
+data['fan'] = []
+data['fan'].append({
+    'content': 'quạt'
+})
+data['door'] = []
+data['door'].append({
+    'content': 'cửa'
+})    
+data['door'].append({
+    'content': 'cổng'
+})
+data['occupancy'] = []
+data['occupancy'].append({
+    'content': 'pir'
+})
+data['occupancy'].append({
+    'content': 'chuyển động'
+})
+data['curtain'] = []
+data['curtain'].append({
+    'content': 'rèm'
+})
+data['curtain'].append({
+    'content': 'mành'
+})
+data['curtain'].append({
+    'content': 'màn'
+})
+data['cover'] = []
+data['cover'].append({
+    'content': 'cửa cuốn'    
+})
+data['gate'] = []
+data['gate'].append({
+    'content': 'cổng'    
+})
+data['request_temperature'] = []
+data['request_temperature'].append({
+    'content': 'nhiệt độ'    
+})
+data['request_humidity'] = []
+data['request_humidity'].append({
+    'content': 'độ ẩm'    
+})
+data['request_script'] = []
+data['request_script'].append({
+    'content': 'kịch bản'    
+})
+data['request_automation'] = []
+data['request_automation'].append({
+    'content': 'tự động'    
 })
 with open('config.json', 'w') as outfile:
     json.dump(data, outfile)

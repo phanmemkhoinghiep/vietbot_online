@@ -22,7 +22,7 @@ if [ $? -eq 0 ]; then
     printf 'Skipping WiFi Connect\n'
 else
     printf 'Starting WiFi Connect\n'
-    wifi-connect -s viebot -g 192.168.4.1 -d 192.168.4.2,192.168.4.5
+    wifi-connect -s vietbot -g 192.168.4.1 -d 192.168.4.2,192.168.4.5
 fi
 
 # Start your application here.
