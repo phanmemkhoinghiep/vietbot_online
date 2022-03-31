@@ -17,22 +17,16 @@ Chờ cho đến khi kết thúc
 
 2.1. Truy cập vào thư mục vietbot_online
 
-Quay về thư mục gốc
 ```sh
-cd ~
+cd /home/pi/vietbot_online/src
 ```
 Sau đó kiểm tra chính xác xem có trong nhánh beta hay không
 
 ```sh
-pi@vietbot:~/vietbot_online/src $ git branch -vv
-* beta b7da00f [origin/beta] Update 03_software_install_guide.md
+git branch -vv
 ```
 
-Sau đó
-```sh
-cd /home/pi/vietbot_online/src
-```
-Check xem có file gì mới không
+Sau đó Check xem có file gì mới không
 
 ```sh
 git fetch
@@ -42,7 +36,7 @@ Chú ý muốn giữ lại create_config.py cần đổi tên sang create_config
 Download các File mới về
 
 ```sh
-pi@vietbot:~/vietbot_online/src $ git pull
+git pull
 ```
 
 Nếu ra thông báo sau
