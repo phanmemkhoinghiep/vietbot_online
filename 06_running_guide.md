@@ -20,7 +20,7 @@ python3 create_config.py
 1.4. Chạy boot bằng lệnh 
 
 ```sh
-python3 start.py
+python3 start.py 2>/dev/null
 ```
 1.4. Ra lệnh bằng từ khóa
 
@@ -44,7 +44,7 @@ Description=vietbot
 After=alsa-state.service
 
 [Service]
-ExecStart = /usr/bin/python3.9  /home/pi/vietbot_online/src/start.py
+ExecStart = /usr/bin/python3.9  /home/pi/vietbot_online/src/start.py 2>/dev/null
 WorkingDirectory=/home/pi/vietbot_online/src
 StandardOutput=inherit
 StandardError=inherit
