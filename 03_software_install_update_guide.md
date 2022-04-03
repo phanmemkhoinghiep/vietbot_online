@@ -106,6 +106,7 @@ python3 -m pip install --upgrade pip
 
 ```
 3.2. Cài đặt các gói Python 
+
 Truy cập vào thư mục vietbot_online
 
 ```sh
