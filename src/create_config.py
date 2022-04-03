@@ -821,5 +821,11 @@ data['request_automation'] = []
 data['request_automation'].append({
     'content': 'tự động'    
 })
+data['location'] = []
+data['location'].append({
+    'long': 105.804817,
+    'lat': 21.028511,
+    'is_active': True    
+})
 with open('config.json', 'w') as outfile:
     json.dump(data, outfile)
