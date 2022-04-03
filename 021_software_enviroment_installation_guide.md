@@ -16,7 +16,8 @@ hoặc
 2.1. Dùng Win32IMG để ghi vào thẻ nhớ SD
 
 ### STEP3. Khai báo WiFi
-
+có thể tải file wpa_supplicant.conf mẫu chuẩn ở link này, rồi sửa lại ID wifi và pass wifi cho đúng. Hoặc làm file mới như hướng dẫn phía dưới
+[GOOGLE DRIVE](https://drive.google.com/file/d/1D2iFC-sP2PUL-RijPmK9yKo3IsgEAvJ8/view?usp=sharing)
 3.1. Sử dụng Notepad ++ để tạo file có tên là wpa_supplicant.conf trong thư mục boot của thẻ nhớ
 
 3.2. Set định dạng File
@@ -36,6 +37,9 @@ network={
 3.4. Save lại nội dung File
 
 3.5. Tạo một file rỗng có tên là SSH
+có thể tải file SSH mẫu chuẩn ở link này
+[GOOGLE DRIVE](https://drive.google.com/file/d/1QCAYZMTlXJ7Zx3ZW8iKjiXDVuGqZMqTc/view?usp=sharing)
+
 
 ### STEP4. Kết nối và điều chỉnh
 
@@ -43,7 +47,7 @@ network={
 
 4.1.1. Cắm thẻ nhớ vào Pi Zero 2 W/Pi 3B+/Pi4 và boot lên
 
-4.1.2. Sử dụng SSH để truy cập từ xa vào Console
+4.1.2. Tìm địa chỉ IP của pi và sử dụng SSH để truy cập từ xa vào Console
 
 4.1.3. Nhập Username và password đăng nhập (pi/vietbot)
 
