@@ -18,6 +18,7 @@ hoặc
 ### STEP3. Khai báo WiFi
 có thể tải file wpa_supplicant.conf mẫu chuẩn ở link này, rồi sửa lại ID wifi và pass wifi cho đúng. Hoặc làm file mới như hướng dẫn phía dưới
 [GOOGLE DRIVE](https://drive.google.com/file/d/1D2iFC-sP2PUL-RijPmK9yKo3IsgEAvJ8/view?usp=sharing)
+
 3.1. Sử dụng Notepad ++ để tạo file có tên là wpa_supplicant.conf trong thư mục boot của thẻ nhớ
 
 3.2. Set định dạng File
