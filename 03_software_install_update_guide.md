@@ -9,7 +9,7 @@ cd ~
 ```
 Sau đó
 ```sh
-git clone -b beta --single-branch https://github.com/phanmemkhoinghiep/vietbot_online.git
+git clone -b stable --single-branch https://github.com/phanmemkhoinghiep/vietbot_online.git
 ```
 Chờ cho đến khi kết thúc
 
@@ -25,7 +25,7 @@ Sau đó kiểm tra chính xác xem có trong nhánh beta hay không
 
 ```sh
 pi@vietbot:~/vietbot_online/src $ git branch -vv
-* beta b7da00f [origin/beta] Update 03_software_install_guide.md
+* stable b7da00f [origin/beta] Update 03_software_install_guide.md
 ```
 
 Sau đó
