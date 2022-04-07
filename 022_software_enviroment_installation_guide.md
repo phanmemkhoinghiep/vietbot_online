@@ -257,7 +257,11 @@ Chạy lệnh sau
 ```sh
 sudo usermod -aG root pi
 ```
-
+4.3.2. fix lỗi bot không hoạt động sau 1 thời gian. 
+Chạy lệnh sau
+```sh
+sudo usermod -aG audio root
+```
 4.4. Test loa và mic sau khi cài
 
 4.4.1. Test loa
