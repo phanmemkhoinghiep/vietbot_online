@@ -141,6 +141,11 @@ Chạy lệnh sau
 ```sh
 sudo usermod -aG root pi
 ```
+5.2.5. fix lỗi bot không hoạt động sau 1 thời gian.
+Chạy lệnh sau
+```sh
+sudo usermod -aG audio root
+```
 Tiếp đó chuyển qua 
 
 ![CÀI ĐẶT, CẬP NHẬT PHẦN MỀM](https://github.com/phanmemkhoinghiep/vietbot_online/blob/main/03_software_install_update_guide.md) 
