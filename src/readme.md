@@ -38,14 +38,4 @@ Chạy theo hướng dẫn
 
 https://github.com/phanmemkhoinghiep/vietbot_online/blob/main/06_running_guide.md
 
-Di chuyển đến thư mục
-```sh
-cd /home/pi/vietbot_online/src_beta
-```
-Sau đó
-
-```sh
-python3 start.py
-```
-
 
