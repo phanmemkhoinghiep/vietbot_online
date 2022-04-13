@@ -2,14 +2,15 @@
 
 ### STEP1. Cài đặt
 
-1.1. Cài đặt theo hướng dẫn
+1.1. Lấy code về hoặc cập nhật Code theo hướng dẫn
 
-https://github.com/phanmemkhoinghiep/vietbot_online/blob/main/03_software_install_guide.md
+https://github.com/phanmemkhoinghiep/vietbot_online/blob/beta/03_software_install_guide.md
 
-2.1. Cài đặt thư viện
+2.1. Cài đặt thư viện bổ sung cho tính năng mới 
+
 Di chuyển đến thư mục
 ```sh
-cd /home/pi/vietbot_online/src_beta
+cd /home/pi/vietbot_online/src
 
 ```
 Sau đó
@@ -23,7 +24,7 @@ python3 -m pip install -r requirements.txt
 
 Di chuyển đến thư mục
 ```sh
-cd /home/pi/vietbot_online/src_beta
+cd /home/pi/vietbot_online/src
 ```
 Sau đó
 
