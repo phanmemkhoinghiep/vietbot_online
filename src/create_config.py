@@ -63,7 +63,7 @@ data['hotword_engine'].append({
 data['hotword_engine'].append({
     'name': 'porcupine',
     'is_active': True,
-    'porcupine_access_key': 'pJwv7qAbPrw9yXx2D3QeceV39+Rn+KW35JBTeyEal70VOOWoDvm7JQ=='
+    'porcupine_access_key': 'pJwv7qAadasdx2D3QecdasdOOWoDvm7JQ=='
 })
 data['hotword'] = []
 data['hotword'].append({
@@ -206,7 +206,7 @@ data['local_stt'].append({
 })
 data['local_stt'].append({
     'name': 'stt_viettel',
-    'token': 'SythBY7N8AUnddbzfUk15aBx45uFDAebU7twsjBFqq-jxLrWpxlyXxzdWRNwYE8N',
+    'token': 'SythBY7N8AUndsdfsdfWpxlyXxzdWRNwYE8N',
     'time_out': 4000,
     'is_active': False    
 })
@@ -220,14 +220,14 @@ data['local_stt'].append({
 data['local_tts'] = []
 data['local_tts'].append({
     'name': 'tts_gg_free',
-    'token': '8sJJ39o7qhfS00FoRUUSIlkmBXC2fRGU',    
+    'token': '8sJJ39sdfsdfSIlkmBXC2fRGU',    
     'voice_name': '',    
     'speed': '',
     'pitch': '',
     'is_active': False    
 })
 data['local_tts'].append({
-    'token': 'AIzaSyDX37eTZHQALu9y7-smS6hPxhw6_k16b3c',
+    'token': 'AIzaSyDsdfsdf_k16b3c',
     'token_file': 'google.json',    
     'name': 'tts_gg_cloud',    
     'voice_name': 'vi-VN-Wavenet-B',
@@ -237,7 +237,7 @@ data['local_tts'].append({
     'is_active': True    
 })
 data['local_tts'].append({
-    'token': 'SythBY7N8AUnddbzfUk15aBx45uFDAebU7twsjBFqq-jxLrWpxlyXxzdWRNwYE8N',
+    'token': 'SythBY7N8AUsfsdfq-jxLrWsdfsdRNwYE8N',
     'token_file': '',    
     'name': 'tts_viettel',    
     'voice_name': 'hcm-diemmy2',
@@ -246,7 +246,7 @@ data['local_tts'].append({
     'is_active': False    
 })
 data['local_tts'].append({
-    'token': '8sJJ39o7qhfS00FoRUUSIlkmBXC2fRGU',
+    'token': '8sJJsdfsdffRGU',
     'token_file': '',    
     'name': 'tts_zalo',
     'voice_name': '1',    
@@ -255,7 +255,7 @@ data['local_tts'].append({
     'is_active': False    
 })    
 data['local_tts'].append({
-    'token': '9onFCDijHuv61LM4qBZpqWo4A2qzjjDU',
+    'token': '9onFsfsdfqzjjDU',
     'name': 'tts_fpt',
     'voice_name': 'ngoclam',
     'speed': 1.0,
@@ -328,26 +328,13 @@ data['button_data'].append({
 data['smh_skill'] = []
 data['smh_skill'].append({
     'smh_name': 'hass',
-    'smh_url':'https://tieppm.duckdns.org:8123',
-    'smh_token1': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI2M2I3MGY5NDY5MGE0ODcyOTQ1YTI0NTc0MjFmM2Y2NCIsImlhdCI6MTY0NjIxMjM5OCwiZXhwIjoxOTYxNTcyMzk4fQ.CG1Qz1ApG5bvNT_gD-cyO0XlKZ-4Th_U4jAHql_RNEQ',
-    # 'smh_url':'https://hc-21e793e50963b09c0da61a7168ab92f9.vpn1.vccsmart.vn',
-    # 'smh_token1':'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJkNzY3Y2MxMWQ0MGU0MmE0YTNiMjFkMDljNzIwMTc4MiIsImlhdCI6MTYxMjc0OTA2MiwiZXhwIjoxOTI4MTA5MDYyfQ.2zH2F0iExR7KHHsQf-7amCuZ3ty_-YHsSImJlE3Twjc',
-    # 'smh_url':'https://hoangtruong.duckdns.org:8123',
-    # 'smh_token1':'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJjYmVlMGU5ODk1NDE0NzdlOWIxOWJmOTBkMzFjNzllMiIsImlhdCI6MTY0MjEzNTAwMSwiZXhwIjoxOTU3NDk1MDAxfQ.yFJja3NTZpXjjmcZF8Yw9mEjGTqZEyHEyvmUlvC68VM',
+    'smh_url':'https://dasdasd.duckdns.org:8123',
+    'smh_token1': 'eyJ0eXAiOiJKVsfddfxOTYxNTcyMzk4fQ.CG1Qz1ApsdfsdfU4jAHql_RNEQ',
     'smh_token2':'',
     'smh_token3':'',
     'is_active': True        
 })
 
-
-data['smh_skill'].append({
-    'smh_name': 'vcchome',
-    'smh_url':'',
-    'smh_token1': '8ed3ac06-a17b-4aea-b654-e4591ebc5a0e',
-    'smh_token2': 'F27F4F2FA85F9C52A9F1ED5EF1EC8',
-    'smh_token3': 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJxdWFuZ2h1bmdwcjg2QGdtYWlsLmNvbSIsImV4cCI6MTYyMjM2MTMyMSwiaWF0IjoxNjIyMjc0OTIxfQ.gtWei3MlHbgF0Jpq6rM2eHALWtRiJyutsJhF1wpNEwJtrn4Cq_JNoREuKutcpbe4vsYW0AZLLaubWfvMFTf28g',
-    'is_active': False        
-})
 
 data['location'] = []
 data['location'].append({
