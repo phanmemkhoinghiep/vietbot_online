@@ -46,6 +46,7 @@ schedule==1.1.0
 setuptools==52.0.0
 six==1.16.0
 SpeechRecognition==3.8.1
+speedtest==0.0.1
 spidev==3.5
 ssh-import-id==5.10
 termcolor==1.1.0
