@@ -15,7 +15,7 @@ act['up'].append({
 })
 act['down'] = []
 act['down'].append({
-    'value': 'lên'
+    'value': 'xuống'
 })
 act['open'] = []
 act['open'].append({
