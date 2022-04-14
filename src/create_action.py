@@ -64,6 +64,10 @@ act['read'] = []
 act['read'].append({
     'value': 'đọc'
 })
+act['listen'] = []
+act['listen'].append({
+    'value': 'nghe'
+})
 act['incrase'] = []
 act['incrase'].append({
     'value': 'tăng'

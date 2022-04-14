@@ -37,7 +37,23 @@ obj['news'].append({
     'value': 'tin tức'
 })
 obj['news'].append({
+    'value': 'báo'
+})
+obj['news'].append({
     'value': 'thời sự'
+})
+obj['news_data'] = []
+obj['news_data'].append({       
+    'name': 'lao động',
+    'link': 'https://laodong.vn/rss/home.rss'    
+})
+obj['news_data'].append({       
+    'name': 'việt nam net',
+    'link': 'https://vietnamnet.vn/rss/thoi-su-chinh-tri.rss'    
+})
+obj['news_data'].append({       
+    'name': 'thanh niên',
+    'link': 'https://thanhnien.vn/rss/home.rss'    
 })
 obj['music'] = []
 obj['music'].append({
@@ -219,6 +235,41 @@ obj['state'].append({
 })
 obj['state'].append({
     'value': 'thông số'
+})
+obj['radio'] = []
+obj['radio'].append({
+    'value': 'radio'
+})
+obj['radio'].append({
+    'value': 'phát thanh'
+})
+obj['radio'].append({
+    'value': 'đài'
+})
+obj['radio_data'] = []
+obj['radio_data'].append({
+    'name': 'vov1',
+    'link': 'https://str.vov.gov.vn/vovlive/vov1vov5Vietnamese.sdp_aac/playlist.m3u8'        
+})
+obj['radio_data'].append({
+    'name': 'vov2',
+    'link': 'https://str.vov.gov.vn/vovlive/vov2.sdp_aac/playlist.m3u8'            
+})
+obj['radio_data'].append({
+    'name': 'vov3',
+    'link': 'https://str.vov.gov.vn/vovlive/vov3.sdp_aac/playlist.m3u8'   
+})
+obj['radio_data'].append({
+    'name': 'vov giao thông hà nội',
+    'link': 'https://str.vov.gov.vn/vovlive/vovGTHN.sdp_aac/playlist.m3u8'   
+})
+obj['radio_data'].append({
+    'name': 'vov giao thông sài gòn',
+    'link': 'https://str.vov.gov.vn/vovlive/vovGTHCM.sdp_aac/playlist.m3u8'    
+})
+obj['vov_hcm'] = []
+obj['vov_hcm'].append({
+    'value': 'vov giao thông sài gòn'
 })
 obj['compare_percent'] = []
 obj['compare_percent'].append({
