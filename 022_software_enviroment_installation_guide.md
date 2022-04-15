@@ -96,9 +96,11 @@ python3 -m pip install -r requirements.txt
 sudo nano /home/pi/.local/lib/python3.9/site-packages/pafy/backend_youtube_dl.py
 
 ```
-Sau đó tìm đến dòng sau và bổ sung ký tự # đằng trước
+Sau đó tìm đến các dòng sau và bổ sung ký tự # đằng trước
 
 ```sh
+#        self._viewcount = self._ydl_info['view_count']
+#        self._likes = self._ydl_info['like_count']
 #        self._dislikes = self._ydl_info['dislike_count']
 
 ```
