@@ -35,15 +35,6 @@ Vietbot hỗ trợ các hotword của Porcupine cho Raspberry
 
 3.2. Mở file create_config.py bằng WinSCP và Notepad ++
 
-```sh
-country=vn
-update_config=1
-ctrl_interface=/var/run/wpa_supplicant
-network={
-    ssid="testing"
-    psk="testingPassword"
-}
-```
 
 ```sh
 data['hotword_engine'] = []
