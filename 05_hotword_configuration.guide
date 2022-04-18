@@ -35,9 +35,7 @@ Vietbot hỗ trợ các hotword của Porcupine cho Raspberry
 
 3.2. Mở file create_config.py bằng WinSCP và Notepad ++
 
-
 ```sh
-
 data['hotword_engine'] = []
 data['hotword_engine'].append({
     'name': 'snowboy',
