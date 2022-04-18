@@ -20,6 +20,21 @@ obj['today'] = []
 obj['today'].append({
     'value': 'hôm nay'
 })
+obj['tomorrow'] = []
+obj['tomorrow'].append({
+    'value': 'ngày mai'
+})
+obj['next_day'] = []
+obj['next_day'].append({
+    'value': 'ngày kia'
+})
+obj['next_day'].append({
+    'value': 'ngày mốt'
+})
+obj['next_week'] = []
+obj['next_week'].append({
+    'value': 'tuần tới'
+})
 obj['this_month'] = []
 obj['this_month'].append({
     'value': 'tháng này'
@@ -267,9 +282,18 @@ obj['radio_data'].append({
     'name': 'vov giao thông sài gòn',
     'link': 'https://str.vov.gov.vn/vovlive/vovGTHCM.sdp_aac/playlist.m3u8'    
 })
-obj['vov_hcm'] = []
-obj['vov_hcm'].append({
-    'value': 'vov giao thông sài gòn'
+obj['location'] = []
+obj['location'].append({
+    'value': 'địa điểm'
+})
+obj['location'].append({
+    'value': 'khu vực'
+})
+obj['location'].append({
+    'value': 'ở'
+})
+obj['location'].append({
+    'value': 'tại'
 })
 obj['compare_percent'] = []
 obj['compare_percent'].append({
