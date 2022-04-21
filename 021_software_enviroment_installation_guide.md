@@ -11,6 +11,7 @@ hoặc
 [FSHARE](https://www.fshare.vn/file/WUBPA38PI75U)
 
 1.2. Download bộ Image cho Raspberry Pi đã cài đặt sẵn Drive cho Respeaker 2 Mic Hat tại Link sau
+
 [FSHARE](https://www.fshare.vn/file/DEJAIINJE43U)
 
 ### STEP2. Ghi vào thẻ SD
