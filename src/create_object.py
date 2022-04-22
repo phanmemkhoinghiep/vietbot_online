@@ -16,9 +16,16 @@ obj['time_now'] = []
 obj['time_now'].append({
     'value': 'mấy giờ'
 })
+obj['yesterday'] = []
+obj['yesterday'].append({
+    'value': 'hôm qua'
+})
 obj['today'] = []
 obj['today'].append({
     'value': 'hôm nay'
+})
+obj['today'].append({
+    'value': 'ngày này'
 })
 obj['tomorrow'] = []
 obj['tomorrow'].append({
@@ -294,6 +301,130 @@ obj['location'].append({
 })
 obj['location'].append({
     'value': 'tại'
+})
+obj['event'] = []
+obj['event'].append({
+    'value': 'sự kiện'
+})
+obj['anniversary'] = []
+obj['anniversary'].append({
+    'value': 'kỉ niệm'
+})
+obj['anniversary'] = []
+obj['anniversary'].append({
+    'value': 'ngày giỗ'
+})
+obj['anniversary_data'] = []
+obj['anniversary_data'].append({
+    'name':'ngày cưới',
+    'day': '10',
+    'month': '04',
+    'is_lunar_calendar': False
+})
+obj['anniversary_data'].append({
+    'name':'hội Bình Đà',
+    'day': '01',
+    'month': '03',
+    'is_lunar_calendar': True
+})
+obj['anniversary_data'] = []
+obj['anniversary_data'].append({
+    'name':'sinh nhật Beo',
+    'day': '11',
+    'month': '12',
+    'is_lunar_calendar': False
+})
+obj['lunar_day'] = []
+obj['lunar_day'].append({
+    'value': 'ngày âm'
+})
+obj['lunar_day'].append({
+    'value': 'lịch âm'
+})
+obj['lunar_day'].append({
+    'value': 'mùng mấy'
+})
+obj['lunar_day'].append({
+    'value': 'mồng mấy'
+})
+obj['lunar_day'].append({
+    'value': 'âm lịch'
+})
+obj['history'] = []
+obj['history'].append({
+    'value': 'lịch sử'
+})
+obj['history'].append({
+    'value': 'năm xưa'
+})
+obj['event'] = []
+obj['event'].append({
+    'value': 'sự kiện'
+})
+obj['anniversary'] = []
+obj['anniversary'].append({
+    'value': 'kỉ niệm'
+})
+obj['anniversary'].append({
+    'value': 'ngày giỗ'
+})
+obj['name_is'] = []
+obj['name_is'].append({
+    'value': 'tên là'
+})
+obj['name_is'].append({
+    'value': 'có tên'
+})
+obj['name_is'].append({
+    'value': 'với tên'
+})
+obj['end_of_request'] = []
+obj['end_of_request'].append({
+    'value': 'nhé'    
+})
+obj['end_of_request'].append({
+    'value': 'ngay'    
+})
+obj['end_of_request'].append({
+    'value': 'em nhé'    
+})
+obj['end_of_request'].append({
+    'value': 'ngay nhé'    
+})
+obj['end_of_request'].append({
+    'value': 'ngay nào'    
+})
+obj['end_of_request'].append({
+    'value': 'cho anh'    
+})
+obj['end_of_request'].append({
+    'value': 'cho anh nhé'    
+})
+obj['end_of_request'].append({
+    'value': 'được không'    
+})
+obj['location_data'] = []
+
+obj['location_data'].append({
+    "name": "Ninh Bình",
+    "coord": {
+        "lon": 105.833328,
+        "lat": 20.25
+    }
+})
+obj['location_data'].append({
+    "name": "Hà Nội",
+    "coord": {
+        "lon": 105.883331,
+        "lat": 21.116671
+    }
+})
+obj['location_data'].append({
+    "name": "Thủ Đô",
+    "coord": {
+        "lon": 105.841171,
+        "lat": 21.0245
+    }
 })
 obj['compare_percent'] = []
 obj['compare_percent'].append({
