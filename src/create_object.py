@@ -359,13 +359,6 @@ obj['event'] = []
 obj['event'].append({
     'value': 'sự kiện'
 })
-obj['anniversary'] = []
-obj['anniversary'].append({
-    'value': 'kỉ niệm'
-})
-obj['anniversary'].append({
-    'value': 'ngày giỗ'
-})
 obj['name_is'] = []
 obj['name_is'].append({
     'value': 'tên là'
