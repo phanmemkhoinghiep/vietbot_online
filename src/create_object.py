@@ -310,7 +310,6 @@ obj['anniversary'] = []
 obj['anniversary'].append({
     'value': 'kỉ niệm'
 })
-obj['anniversary'] = []
 obj['anniversary'].append({
     'value': 'ngày giỗ'
 })
@@ -327,7 +326,6 @@ obj['anniversary_data'].append({
     'month': '03',
     'is_lunar_calendar': True
 })
-obj['anniversary_data'] = []
 obj['anniversary_data'].append({
     'name':'sinh nhật Beo',
     'day': '11',
