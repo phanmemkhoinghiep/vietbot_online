@@ -12,9 +12,42 @@ obj['moment'].append({
 obj['moment'].append({
     'value': 'hiện tại'
 })
-obj['time_now'] = []
-obj['time_now'].append({
+obj['what_time'] = []
+obj['what_time'].append({
     'value': 'mấy giờ'
+})
+obj['what_day'] = []
+obj['what_day'].append({
+    'value': 'ngày nào'
+})
+obj['what_day'].append({
+    'value': 'ngày gì'
+})
+obj['what_day'].append({
+    'value': 'ngày nhiêu'
+})
+obj['what_day'].append({
+    'value': 'ngày mấy'
+})
+obj['what_month'] = []
+obj['what_month'].append({
+    'value': 'tháng nào'
+})
+obj['what_month'].append({
+    'value': 'tháng gì'
+})
+obj['what_month'].append({
+    'value': 'tháng nhiêu'
+})
+obj['what_month'].append({
+    'value': 'tháng mấy'
+})
+obj['what_year'] = []
+obj['what_month'].append({
+    'value': 'năm nào'
+})
+obj['what_day'].append({
+    'value': 'năm gì'
 })
 obj['yesterday'] = []
 obj['yesterday'].append({
@@ -31,6 +64,9 @@ obj['tomorrow'] = []
 obj['tomorrow'].append({
     'value': 'ngày mai'
 })
+obj['tomorrow'].append({
+    'value': 'hôm sau'
+})
 obj['next_day'] = []
 obj['next_day'].append({
     'value': 'ngày kia'
@@ -38,17 +74,31 @@ obj['next_day'].append({
 obj['next_day'].append({
     'value': 'ngày mốt'
 })
+obj['this_week'] = []
+obj['this_week'].append({
+    'value': 'tuần này'
+})
 obj['next_week'] = []
 obj['next_week'].append({
     'value': 'tuần tới'
+})
+obj['next_week'].append({
+    'value': 'sang tuần'
 })
 obj['this_month'] = []
 obj['this_month'].append({
     'value': 'tháng này'
 })
+obj['next_month'] = []
+obj['this_month'].append({
+    'value': 'tháng tới'
+})
+obj['next_month'].append({
+    'value': 'sang tháng'
+})
 obj['this_year'] = []
 obj['this_year'].append({
-    'value': 'năm'
+    'value': 'năm này'
 })
 obj['weather'] = []
 obj['weather'].append({
@@ -302,13 +352,12 @@ obj['location'].append({
 obj['location'].append({
     'value': 'tại'
 })
-obj['event'] = []
-obj['event'].append({
-    'value': 'sự kiện'
-})
 obj['anniversary'] = []
 obj['anniversary'].append({
     'value': 'kỉ niệm'
+})
+obj['anniversary'].append({
+    'value': 'sự kiện'
 })
 obj['anniversary'].append({
     'value': 'ngày giỗ'
@@ -326,10 +375,11 @@ obj['anniversary_data'].append({
     'month': '03',
     'is_lunar_calendar': True
 })
+obj['anniversary_data'] = []
 obj['anniversary_data'].append({
-    'name':'sinh nhật Beo',
-    'day': '11',
-    'month': '12',
+    'name':'test code',
+    'day': '22',
+    'month': '04',
     'is_lunar_calendar': False
 })
 obj['lunar_day'] = []
@@ -394,29 +444,7 @@ obj['end_of_request'].append({
 obj['end_of_request'].append({
     'value': 'được không'    
 })
-obj['location_data'] = []
 
-obj['location_data'].append({
-    "name": "Ninh Bình",
-    "coord": {
-        "lon": 105.833328,
-        "lat": 20.25
-    }
-})
-obj['location_data'].append({
-    "name": "Hà Nội",
-    "coord": {
-        "lon": 105.883331,
-        "lat": 21.116671
-    }
-})
-obj['location_data'].append({
-    "name": "Thủ Đô",
-    "coord": {
-        "lon": 105.841171,
-        "lat": 21.0245
-    }
-})
 obj['compare_percent'] = []
 obj['compare_percent'].append({
     'music_compare': 80,
