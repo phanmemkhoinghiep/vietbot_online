@@ -237,6 +237,15 @@ data['local_tts'].append({
     'is_active': True    
 })
 data['local_tts'].append({
+    'token': 'dfgdfgdfgARWDFSc',
+    'name': 'tts_gg_cloud_free',    
+    'voice_name': 'vi-VN-Wavenet-B',
+    'profile': 'telephony-class-application',      
+    'speed': 1.0,
+    'pitch': 0,
+    'is_active': False    
+})
+data['local_tts'].append({
     'token': 'SythBY7N8AUsfsdfq-jxLrWsdfsdRNwYE8N',
     'token_file': '',    
     'name': 'tts_viettel',    
@@ -323,8 +332,6 @@ data['button_data'].append({
     'function': 'direct_command',
     'is_active': False    
 })
-
-
 data['smh_skill'] = []
 data['smh_skill'].append({
     'smh_name': 'hass',
@@ -334,8 +341,6 @@ data['smh_skill'].append({
     'smh_token3':'',
     'is_active': True        
 })
-
-
 data['location'] = []
 data['location'].append({
     'long': 105.804817,
@@ -346,6 +351,5 @@ data['tts_speaker'] = []
 data['tts_speaker'].append({
     'is_active': True
 })
-
 with open('config.json', 'w') as outfile:
     json.dump(data, outfile)
