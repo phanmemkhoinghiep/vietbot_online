@@ -491,11 +491,6 @@ obj['havc_swing'].append({
     'value': 'kín'    
     'value_eng': 'off'  
 })
-obj['compare_percent'] = []
-obj['compare_percent'].append({
-    'music_compare': 80,
-    'smarthome_compare': 80
-})
 obj['havc_temperature'] = []
 obj['havc_temperature'].append({
     'value': 'mức nhiệt'    
@@ -503,5 +498,11 @@ obj['havc_temperature'].append({
 obj['havc_temperature'].append({
     'value': 'nhiệt độ'    
 })
+obj['compare_percent'] = []
+obj['compare_percent'].append({
+    'music_compare': 80,
+    'smarthome_compare': 80
+})
+
 with open('object.json', 'w') as outfile:
     json.dump(obj, outfile)
