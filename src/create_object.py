@@ -456,17 +456,17 @@ obj['havc_mode'].append({
 })
 obj['havc_fan'] = []
 obj['havc_fan'].append({
-    'value': 'quạt gió'    
+    'value': 'mạnh'    
 })
 obj['havc_fan'].append({
-    'value': 'mức gió'    
+    'value': 'yếu'    
 })
 obj['havc_swing'] = []
 obj['havc_swing'].append({
-    'value': 'cửa gió'    
+    'value': 'lên'    
 })
 obj['havc_swing'].append({
-    'value': 'khe gió'    
+    'value': 'xuống'    
 })
 obj['compare_percent'] = []
 obj['compare_percent'].append({
