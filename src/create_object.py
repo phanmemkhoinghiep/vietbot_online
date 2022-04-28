@@ -473,6 +473,12 @@ obj['compare_percent'].append({
     'music_compare': 80,
     'smarthome_compare': 80
 })
-
+obj['havc_temperature'] = []
+obj['havc_temperature'].append({
+    'value': 'mức nhiệt'    
+})
+obj['havc_temperature'].append({
+    'value': 'nhiệt độ'    
+})
 with open('object.json', 'w') as outfile:
     json.dump(obj, outfile)
