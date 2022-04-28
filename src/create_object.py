@@ -444,7 +444,30 @@ obj['end_of_request'].append({
 obj['end_of_request'].append({
     'value': 'được không'    
 })
-
+obj['havc_mode'] = []
+obj['havc_mode'].append({
+    'value': 'nóng'    
+})
+obj['havc_mode'].append({
+    'value': 'lạnh'    
+})
+obj['havc_mode'].append({
+    'value': 'khô'    
+})
+obj['havc_fan'] = []
+obj['havc_fan'].append({
+    'value': 'quạt gió'    
+})
+obj['havc_fan'].append({
+    'value': 'mức gió'    
+})
+obj['havc_swing'] = []
+obj['havc_swing'].append({
+    'value': 'cửa gió'    
+})
+obj['havc_swing'].append({
+    'value': 'khe gió'    
+})
 obj['compare_percent'] = []
 obj['compare_percent'].append({
     'music_compare': 80,
