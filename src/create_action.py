@@ -146,7 +146,16 @@ act['schedule'].append({
 act['schedule'].append({
     'value': 'hẹn giờ'
 })
-
+act['setup'] = []
+act['setup'].append({
+    'value': 'thiết lập'
+})
+act['setup'].append({
+    'value': 'cài đặt'
+})
+act['setup'].append({
+    'value': 'điều chỉnh'
+})
 
 with open('action.json', 'w') as outfile:
     json.dump(act, outfile)
