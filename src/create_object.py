@@ -450,29 +450,37 @@ obj['havc_mode'].append({
     'value_eng': 'heat'    
 })
 obj['havc_mode'].append({
-    'value': 'cool',
-    'value_eng': 'lạnh'     
+    'value': 'lạnh',
+    'value_eng': 'cool'     
 })
 obj['havc_mode'].append({
     'value': 'dry', 
     'value_eng': 'khô'       
 })
 obj['havc_mode'].append({
-    'value': 'chỉ quạt', 
-    'value_eng': 'fan_only'       
+    'value': 'tự động', 
+    'value_eng': 'auto'       
 })
 obj['havc_fan'] = []
 obj['havc_fan'].append({
     'value': 'mạnh',   
-    'value_eng': 'strong'   
+    'value_eng': 'high'   
 })
 obj['havc_fan'].append({
     'value': 'trung bình',    
     'value_eng': 'medium'   
 })
 obj['havc_fan'].append({
+    'value': 'giữa',    
+    'value_eng': 'middle'   
+})
+obj['havc_fan'].append({
     'value': 'yếu',   
     'value_eng': 'low'   
+})
+obj['havc_fan'].append({
+    'value': 'phe phẩy',  
+    'value_eng': 'both'  
 })
 obj['havc_swing'] = []
 obj['havc_swing'].append({
@@ -480,12 +488,12 @@ obj['havc_swing'].append({
     'value_eng': 'vertical'   
 })
 obj['havc_swing'].append({
-    'value': 'phe phẩy',  
-    'value_eng': 'auto'  
+    'value': 'ngang',  
+    'value_eng': 'horizontal'   
 })
 obj['havc_swing'].append({
     'value': 'gật gù',
-    'value_eng': 'auto'  
+    'value_eng': 'both'  
 })
 obj['havc_swing'].append({
     'value': 'kín',
