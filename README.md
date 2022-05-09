@@ -1,5 +1,6 @@
 # vietbot_online
-Vietbot phiên bản Online Beta, sử dụng Server Vietbot tại địa chỉ http://vietbot.xyz:5000
+Trợ lý ảo tiếng Việt 
+Phiên bản Online Beta, sử dụng Server Vietbot tại địa chỉ http://vietbot.xyz:5000
 
 
 ![DANH SÁCH PHẦN CỨNG TƯƠNG THÍCH](https://github.com/phanmemkhoinghiep/vietbot_online/blob/stable/00_hardware_compatibility_list.md)=>
