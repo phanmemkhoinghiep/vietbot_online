@@ -444,66 +444,66 @@ obj['end_of_request'].append({
 obj['end_of_request'].append({
     'value': 'được không'    
 })
-obj['havc_mode'] = []
-obj['havc_mode'].append({
+obj['hvac_mode'] = []
+obj['hvac_mode'].append({
     'value': 'nóng',
     'value_eng': 'heat'    
 })
-obj['havc_mode'].append({
+obj['hvac_mode'].append({
     'value': 'lạnh',
     'value_eng': 'cool'     
 })
-obj['havc_mode'].append({
+obj['hvac_mode'].append({
     'value': 'dry', 
     'value_eng': 'khô'       
 })
-obj['havc_mode'].append({
+obj['hvac_mode'].append({
     'value': 'tự động', 
     'value_eng': 'auto'       
 })
-obj['havc_fan'] = []
-obj['havc_fan'].append({
+obj['hvac_fan'] = []
+obj['hvac_fan'].append({
     'value': 'mạnh',   
     'value_eng': 'high'   
 })
-obj['havc_fan'].append({
+obj['hvac_fan'].append({
     'value': 'trung bình',    
     'value_eng': 'medium'   
 })
-obj['havc_fan'].append({
+obj['hvac_fan'].append({
     'value': 'giữa',    
     'value_eng': 'middle'   
 })
-obj['havc_fan'].append({
+obj['hvac_fan'].append({
     'value': 'yếu',   
     'value_eng': 'low'   
 })
-obj['havc_fan'].append({
+obj['hvac_fan'].append({
     'value': 'phe phẩy',  
     'value_eng': 'both'  
 })
-obj['havc_swing'] = []
-obj['havc_swing'].append({
+obj['hvac_swing'] = []
+obj['hvac_swing'].append({
     'value': 'đứng',  
     'value_eng': 'vertical'   
 })
-obj['havc_swing'].append({
+obj['hvac_swing'].append({
     'value': 'ngang',  
     'value_eng': 'horizontal'   
 })
-obj['havc_swing'].append({
+obj['hvac_swing'].append({
     'value': 'gật gù',
     'value_eng': 'both'  
 })
-obj['havc_swing'].append({
+obj['hvac_swing'].append({
     'value': 'kín',
     'value_eng': 'off'  
 })
-obj['havc_temperature'] = []
+obj['hvac_temperature'] = []
 obj['havc_temperature'].append({
     'value': 'mức nhiệt'    
 })
-obj['havc_temperature'].append({
+obj['hvac_temperature'].append({
     'value': 'nhiệt độ'    
 })
 obj['compare_percent'] = []
