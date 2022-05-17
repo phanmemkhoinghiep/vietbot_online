@@ -450,12 +450,12 @@ obj['hvac_mode'].append({
     'value_eng': 'heat'    
 })
 obj['hvac_mode'].append({
-    'value': 'lạnh',
+    'value': 'tuyết',
     'value_eng': 'cool'     
 })
 obj['hvac_mode'].append({
-    'value': 'dry', 
-    'value_eng': 'khô'       
+    'value': 'khô', 
+    'value_eng': 'dry'       
 })
 obj['hvac_mode'].append({
     'value': 'tự động', 
@@ -500,11 +500,11 @@ obj['hvac_swing'].append({
     'value_eng': 'off'  
 })
 obj['hvac_temperature'] = []
-obj['havc_temperature'].append({
-    'value': 'mức nhiệt'    
+obj['hvac_temperature'].append({
+    'value': 'nhiệt'    
 })
 obj['hvac_temperature'].append({
-    'value': 'nhiệt độ'    
+    'value': 'độ'    
 })
 obj['compare_percent'] = []
 obj['compare_percent'].append({
