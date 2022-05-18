@@ -510,9 +510,18 @@ obj['fan_oscillate_on'] = []
 obj['fan_oscillate_on'].append({
     'value': 'quay'
 })
+obj['fan_oscillate_on'].append({
+    'value': 'xoay'
+})
+obj['fan_oscillate_on'].append({
+    'value': 'đảo'
+})
 obj['fan_oscillate_off'] = []
 obj['fan_oscillate_off'].append({
     'value': 'đứng'
+})
+obj['fan_oscillate_off'].append({
+    'value': 'cố định'
 })
 obj['fan_increase_speed'] = []
 obj['fan_increase_speed'].append({
