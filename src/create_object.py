@@ -506,6 +506,51 @@ obj['hvac_temperature'].append({
 obj['hvac_temperature'].append({
     'value': 'độ'    
 })
+obj['fan_oscillate_on'] = []
+obj['fan_oscillate_on'].append({
+    'value': 'quay'
+})
+obj['fan_oscillate_off'] = []
+obj['fan_oscillate_off'].append({
+    'value': 'đứng'
+})
+obj['fan_increase_speed'] = []
+obj['fan_increase_speed'].append({
+    'value': 'mạnh hơn'
+})
+obj['fan_increase_speed'].append({
+    'value': 'nhanh hơn'
+})
+obj['fan_increase_speed'].append({
+    'value': 'tăng tốc'
+})
+obj['fan_decrease_speed'] = []
+obj['fan_decrease_speed'].append({
+    'value': 'yếu hơn'
+})
+obj['fan_decrease_speed'].append({
+    'value': 'chậm hơn'
+})
+obj['fan_decrease_speed'].append({
+    'value': 'giảm tốc'
+})
+obj['fan_percent'] = []
+obj['fan_percent'].append({
+    'value': '%'
+})
+obj['fan_preset_mode'] = []
+obj['fan_preset_mode'].append({
+    'value': 'chế độ thứ nhất',    
+    'value_eng': 'level_1'   
+})
+obj['fan_preset_mode'].append({
+    'value': 'chế độ thứ hai',    
+    'value_eng': 'level_2'   
+})
+obj['fan_preset_mode'].append({
+    'value': 'chế độ thứ ba',    
+    'value_eng': 'level_3'   
+})
 obj['compare_percent'] = []
 obj['compare_percent'].append({
     'music_compare': 80,

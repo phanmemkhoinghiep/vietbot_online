@@ -156,6 +156,9 @@ act['setup'].append({
 act['setup'].append({
     'value': 'chỉnh'
 })
+act['setup'].append({
+    'value': 'thiết lập'
+})
 
 with open('action.json', 'w') as outfile:
     json.dump(act, outfile)
