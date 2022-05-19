@@ -10,7 +10,9 @@ hoặc
 
 [FSHARE FULL](https://www.fshare.vn/file/WUBPA38PI75U)
 
-[FSHARE FILE RÚT GỌN 1.4G](https://www.fshare.vn/file/WUBPA38PI75U)
+[FSHARE FILE RÚT GỌN 1.4G](https://www.fshare.vn/file/EFOSNN22TNJH)
+
+
 
 
 
