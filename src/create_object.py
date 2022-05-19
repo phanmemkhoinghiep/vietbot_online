@@ -506,10 +506,88 @@ obj['hvac_temperature'].append({
 obj['hvac_temperature'].append({
     'value': 'độ'    
 })
+obj['fan_oscillate_on'] = []
+obj['fan_oscillate_on'].append({
+    'value': 'quay'
+})
+obj['fan_oscillate_off'] = []
+obj['fan_oscillate_off'].append({
+    'value': 'đứng'
+})
+obj['fan_increase_speed'] = []
+obj['fan_increase_speed'].append({
+    'value': 'mạnh hơn'
+})
+obj['fan_increase_speed'].append({
+    'value': 'nhanh hơn'
+})
+obj['fan_increase_speed'].append({
+    'value': 'tăng tốc'
+})
+obj['fan_decrease_speed'] = []
+obj['fan_decrease_speed'].append({
+    'value': 'yếu hơn'
+})
+obj['fan_decrease_speed'].append({
+    'value': 'chậm hơn'
+})
+obj['fan_decrease_speed'].append({
+    'value': 'giảm tốc'
+})
+obj['fan_percent'] = []
+obj['fan_percent'].append({
+    'value': '%'
+})
+obj['fan_preset_mode'] = []
+obj['fan_preset_mode'].append({
+    'value': 'chế độ thứ nhất',    
+    'value_eng': 'level_1'   
+})
+obj['fan_preset_mode'].append({
+    'value': 'chế độ thứ hai',    
+    'value_eng': 'level_2'   
+})
+obj['fan_preset_mode'].append({
+    'value': 'chế độ thứ ba',    
+    'value_eng': 'level_3'   
+})
 obj['compare_percent'] = []
 obj['compare_percent'].append({
     'music_compare': 80,
     'smarthome_compare': 80
+})
+obj['light_brightness'] = []
+obj['light_brightness'].append({
+    'value': 'độ sáng'    
+})
+obj['light_temperature'] = []
+obj['light_temperature'].append({
+    'value': 'nhiệt độ'    
+})
+obj['light_color_data'] = []
+obj['light_color_data'].append({
+    'name': 'xanh lá',    
+    'R':0,
+    'G':255,
+    'B':0    
+})
+obj['light_color_data'].append({
+    'name': 'xanh lam',    
+    'R':0,
+    'G':0,
+    'B':255    
+})
+obj['light_color_data'].append({
+    'name': 'đỏ',    
+    'R':255,
+    'G':0,
+    'B':0    
+})
+obj['light_color_data'].append({
+    'name': 'vàng',    
+    'R':255,
+    'G':255,
+    'B':0    
 })
 
 with open('object.json', 'w') as outfile:
