@@ -510,18 +510,9 @@ obj['fan_oscillate_on'] = []
 obj['fan_oscillate_on'].append({
     'value': 'quay'
 })
-obj['fan_oscillate_on'].append({
-    'value': 'xoay'
-})
-obj['fan_oscillate_on'].append({
-    'value': 'đảo'
-})
 obj['fan_oscillate_off'] = []
 obj['fan_oscillate_off'].append({
     'value': 'đứng'
-})
-obj['fan_oscillate_off'].append({
-    'value': 'cố định'
 })
 obj['fan_increase_speed'] = []
 obj['fan_increase_speed'].append({
@@ -564,6 +555,39 @@ obj['compare_percent'] = []
 obj['compare_percent'].append({
     'music_compare': 80,
     'smarthome_compare': 80
+})
+obj['light_brightness'] = []
+obj['light_brightness'].append({
+    'value': 'độ sáng'    
+})
+obj['light_temperature'] = []
+obj['light_temperature'].append({
+    'value': 'nhiệt độ'    
+})
+obj['light_color_data'] = []
+obj['light_color_data'].append({
+    'name': 'xanh lá',    
+    'R':0,
+    'G':255,
+    'B':0    
+})
+obj['light_color_data'].append({
+    'name': 'xanh lam',    
+    'R':0,
+    'G':0,
+    'B':255    
+})
+obj['light_color_data'].append({
+    'name': 'đỏ',    
+    'R':255,
+    'G':0,
+    'B':0    
+})
+obj['light_color_data'].append({
+    'name': 'vàng',    
+    'R':255,
+    'G':255,
+    'B':0    
 })
 
 with open('object.json', 'w') as outfile:
