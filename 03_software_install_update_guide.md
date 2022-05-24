@@ -23,10 +23,14 @@ Sau đó kiểm tra chính xác xem có trong nhánh beta hay không
 
 ```sh
 git branch -vv
+```
+Nếu câu trả lời là
+
+```sh
+
 * beta b7da00f [origin/beta] Update 03_software_install_guide.md
 ```
-
-Check xem có file gì mới không
+thì vietbot đã đúng nhánh beta, khi đó có thể check xem có file gì mới không
 
 ```sh
 git fetch
