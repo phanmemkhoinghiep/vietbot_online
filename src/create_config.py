@@ -224,6 +224,7 @@ config['local_tts'].append({
     'voice_name': '',    
     'speed': '',
     'pitch': '',
+    're_use': True,
     'is_active': False    
 })
 config['local_tts'].append({
@@ -234,7 +235,8 @@ config['local_tts'].append({
     'profile': 'telephony-class-application',      
     'speed': 1.0,
     'pitch': 0,
-    'is_active': True    
+    're_use': True,
+    'is_active': False    
 })
 config['local_tts'].append({
     'token': 'dfgdfgdfgARWDFSc',
@@ -243,7 +245,8 @@ config['local_tts'].append({
     'profile': 'telephony-class-application',      
     'speed': 1.0,
     'pitch': 0,
-    'is_active': False    
+    're_use': True,
+    'is_active': False   
 })
 config['local_tts'].append({
     'token': 'SythBY7N8AUsfsdfq-jxLrWsdfsdRNwYE8N',
@@ -261,6 +264,7 @@ config['local_tts'].append({
     'voice_name': '1',    
     'speed': 1.0,
     'pitch': '',
+    're_use': True,
     'is_active': False    
 })    
 config['local_tts'].append({
@@ -269,7 +273,8 @@ config['local_tts'].append({
     'voice_name': 'ngoclam',
     'speed': 1.0,
     'pitch': '',    
-    'is_active': False    
+    're_use': True,
+    'is_active': False   
 })
 
 config['playback_time'] = []
