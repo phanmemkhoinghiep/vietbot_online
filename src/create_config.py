@@ -309,29 +309,29 @@ config['server'].append({
     'is_active': False        
 })
 
-config['button_config'] = []
-config['button_config'].append({
+config['button_data'] = []
+config['button_data'].append({
     'gpio_address': 24,
     'type': 'touch',
     'pulse': True,    
     'function': 'volume_down',
     'is_active': False    
 })
-config['button_config'].append({
+config['button_data'].append({
     'gpio_address': 25,
     'type': 'touch',
     'pulse': True,    
     'function': 'volume_up',
     'is_active': False    
 })
-config['button_config'].append({
+config['button_data'].append({
     'gpio_address': 22,
     'type': 'touch',    
     'pulse': True,    
     'function': 'toggle_mic',
     'is_active': False    
 })
-config['button_config'].append({
+config['button_data'].append({
     'gpio_address': 26,
     'type': 'touch',    
     'pulse': True,    
