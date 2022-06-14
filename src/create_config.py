@@ -255,6 +255,7 @@ config['local_tts'].append({
     'voice_name': 'hcm-diemmy2',
     'speed': 1.0,
     'pitch': '',
+    're_use': True,
     'is_active': False    
 })
 config['local_tts'].append({
