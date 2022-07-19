@@ -44,7 +44,7 @@ sau đó
 ```sh
 sudo apt-get upgrade -y
 ```
-2.1.2. Cài đặt các gói python
+2.1.2. Cài đặt các gói thư viện
 
 ```sh
 sudo apt-get install git python3-pip python3-pyaudio python-all-dev python3-all-dev libsdl2-mixer-2.0-0 libportaudio2  libportaudio-dev vlc pulseaudio -y
@@ -67,7 +67,6 @@ python3 -m pip install --upgrade pip
 
 ```
 3.2. Cài đặt các gói Python 
-
 
 ```sh
 cd ~ 
