@@ -44,16 +44,7 @@ config['mic'].append({
 })
 config['volume'] = []
 config['volume'].append({
-    'value': 50,
-    'type': 'event'    
-})
-config['volume'].append({
-    'value': 50,
-    'type': 'speak'    
-})
-config['volume'].append({
-    'value': 50,
-    'type': 'playback'    
+    'value': 50 
 })
 config['hotword_engine'] = []
 config['hotword_engine'].append({
