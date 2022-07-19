@@ -200,57 +200,32 @@ Lưu lại thông tin về card_id và device_id ở mỗi kết quả lệnh
 Chạy lệnh sau 
 
 ```sh
-sudo nano /home/pi/.asoundrc
+sudo nano /usr/share/alsa/alsa.conf
 ```
-Cửa sổ nano hiện lên, paste dòng sau, thay thế <card_id> và <device_id> bằng kết quả đã lưu ví dụ 0:0 hoặc 1:0 hoặc 1:1:
-
+Cửa sổ nano hiện lên, tìm tới 2 dòng sau
 ```sh
-pcm.!default {
-  type asym
-  capture.pcm "mic"  
-  playback.pcm "speaker"  
-}
-pcm.mic {
-  type plug
-  slave {
-    pcm "hw:<card_id>,<device_id>"
-  }
-}
-pcm.speaker {
-  type plug
-  slave {
-    pcm "hw:<card_id>,<device_id>"
-  }
-}
+# defaults
+defaults.ctl.card 0
+defaults.pcm.card 0
+
 ```
+Thay thế ký tự '0' bằng kết quả đã lưu cho <card_id>, ví dụ 1
+
+tiếp tục tìm tới 2 dòng sau
+```sh
+# defaults
+defaults.pcm.device 0
+defaults.pcm.subdevice 0
+```
+Thay thế ký tự '0' bằng kết quả đã lưu cho <device_id>, ví dụ 1 (Nếu 0 thì ko phải thay)
+
 Bấm lần lượt Ctrl + X, sau đó Y rồi Enter
 
-4.2.3. Copy file thiết lập cho mọi account 
-
-Chạy lệnh sau
-```sh
-sudo cp /home/pi/.asoundrc /etc/asound.conf
-```
-4.2.4. Fix lỗi Audio không chạy tự động của Mic USB
-
-Chạy lệnh sau
-
-```sh
-cd /home/pi/       
-git clone https://github.com/shivasiddharth/PulseAudio-System-Wide       
-cd ./PulseAudio-System-Wide/      
-sudo cp ./pulseaudio.service /etc/systemd/system/pulseaudio.service    
-sudo systemctl --system enable pulseaudio.service       
-sudo systemctl --system start pulseaudio.service       
-sudo cp ./client.conf /etc/pulse/client.conf        
-sudo sed -i '/^pulse-access:/ s/$/root,pi/' /etc/group    
-```
-4.2.5. Reboot lại Pi
+4.2.3. Reboot lại Pi
 Chạy lệnh sau
 ```sh
 sudo reboot
 ```
-
 4.3. Cài đặt điều khiển Led cho Modun ReSpeaker Mic Array v2.0 hoặc ReSpeaker USB Mic Array (Nếu không dùng thì bỏ qua)
 
 4.3.1. Đưa Account đang dùng (Ví dụ pi) vào group root
