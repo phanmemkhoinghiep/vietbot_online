@@ -58,24 +58,6 @@ config['hotword_engine'].append({
 })
 config['hotword'] = []
 config['hotword'].append({
-    'type': 'snowboy',
-    'file_name': 'snowboy.umdl',    
-    'sensitive': 0.6,        
-    'is_active': True    
-})
-config['hotword'].append({
-    'type': 'snowboy',
-    'file_name': 'subex.umdl',    
-    'sensitive': 0.4,        
-    'is_active': True    
-})
-config['hotword'].append({
-    'type': 'porcupine',
-    'file_name': 'vi-ci-ci_en_raspberry-pi.ppn',    
-    'sensitive': 0.4,        
-    'is_active': True    
-})
-config['hotword'].append({
     'type': 'porcupine',
     'file_name': 'alexa_raspberry-pi.ppn',    
     'sensitive': 0.4,        
