@@ -179,9 +179,9 @@ sudo alsactl store
 ```sh
 python3 -m pip install rpi.gpio
 ```
-4.2. Cài đặt cho Mic USB và Loa
+4.2. Cài đặt cho Mic USB (Mic USB thường và Mic Respeaker USB)
 
-4.2.1. Thống kê ID của Mic USB và Loa
+4.2.1. Thống kê ID của Mic USB và Loa 
 
 Chạy lệnh sau để biết ID của Mic USB
 ```sh
@@ -194,7 +194,7 @@ aplay -l
 ```
 Lưu lại thông tin về card_id và device_id ở mỗi kết quả lệnh
 
-4.2.2. Khai báo cho Mic USB
+4.2.2. Khai báo Default cho ALSA
 
 Chạy lệnh sau 
 
@@ -218,43 +218,38 @@ defaults.pcm.subdevice 0
 ```
 Thay thế ký tự '0' bằng kết quả đã lưu cho <device_id>, ví dụ 1 (Nếu 0 thì ko phải thay)
 
-Bấm lần lượt Ctrl + X, sau đó Y rồi Enter
-
-4.2.3. Reboot lại Pi
-Chạy lệnh sau
-```sh
-sudo reboot
-```
-4.3. Cài đặt điều khiển Led cho Modun ReSpeaker Mic Array v2.0 hoặc ReSpeaker USB Mic Array (Nếu không dùng thì bỏ qua)
-
-4.3.1. Đưa Account đang dùng (Ví dụ pi) vào group root
+4.2.3. Đưa Account đang dùng (Ví dụ pi) vào group root
 
 Chạy lệnh sau
 ```sh
 sudo usermod -aG root pi
 ```
-4.3.2. fix lỗi bot không hoạt động sau 1 thời gian. 
+4.2.4. fix lỗi bot không hoạt động sau 1 thời gian.
 Chạy lệnh sau
 ```sh
 sudo usermod -aG audio root
 ```
-4.4. Test loa và mic sau khi cài
-
-4.4.1. Test loa
+4.2.5. Reboot lại Pi
 Chạy lệnh sau
+```sh
+sudo reboot
+```
+4.2.6. Test loa và mic sau khi cài
+
+Test loa bằng lệnh sau
 ```sh
 speaker-test -t wav -c 2
 ```
-4.4.2. Test Mic
-Chạy lệnh sau để ghi âm
+4.2.7. Test Mic bằng lệnh sau 
+Ghi âm
 ```sh
 arecord --format=S16_LE --duration=5 --rate=16000 --file-type=raw out.raw
 ```
-Chạy lệnh sau để phát lại
+Phát lại
 ```sh
 aplay --format=S16_LE --rate=16000 out.raw
 ```
-4.4.3. Test stream giữa Mic và Loa
+4.2.8. Test stream giữa Mic và Loa bằng lệnh sau
 ```sh
 arecord --format=S16_LE --rate=16000 | aplay --format=S16_LE --rate=16000
 ```
