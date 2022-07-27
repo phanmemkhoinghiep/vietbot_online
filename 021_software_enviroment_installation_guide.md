@@ -7,7 +7,7 @@
 [GOOGLE DRIVE](https://drive.google.com/file/d/1jY3hx7nrfd-ukf4AeMss5YgZkauzemWO/view?usp=sharing)
 
 
-1.2. Download bộ Image cho Raspberry Pi đã cài đặt sẵn Drive cho Respeaker 2 Mic Hat tại Link sau
+1.2. Download bộ Image cho Raspberry Pi đã cài đặt sẵn Drive cho Respeaker 2MicHat, 4MicHat tại Link sau
 
 [GOOGLE DRIVE FILE NÉN 1.4G](https://drive.google.com/file/d/1SZwM6F2k0eiubYJ0VcXg47Me68E9WReX/view?usp=sharing)
 
