@@ -64,7 +64,7 @@ sudo raspi-config
 
 ### STEP5. Khai báo Mic
 
-5.1. Khai báo Mic 2 Hat, Mic 4Hat
+5.1. Cài đặt cho Mic 2 Hat, Mic 4Hat
 
 5.1.1. Tạo một file rỗng asound.conf tại thư mục /home/pi như sau
 
@@ -81,7 +81,7 @@ Chạy lệnh sau
 sudo cp /home/pi/.asoundrc /etc/asound.conf
 ```
 
-5.2. Khai báo Mic USB (Mic USB thường và Mic Respeaker USB)
+5.2. Cài đặt cho Mic USB (Mic USB thường và Mic Respeaker USB)
 
 5.2.1. Thống kê ID của Mic USB và Loa 
 
@@ -135,6 +135,25 @@ sudo usermod -aG audio root
 Chạy lệnh sau
 ```sh
 sudo reboot
+```
+5.3. Test loa và mic sau khi cài
+
+5.3.1. Test loa bằng lệnh sau
+```sh
+speaker-test -t wav -c 2
+```
+5.3.2. Test Mic bằng lệnh sau 
+Ghi âm
+```sh
+arecord --format=S16_LE --duration=5 --rate=16000 --file-type=raw out.raw
+```
+Phát lại
+```sh
+aplay --format=S16_LE --rate=16000 out.raw
+```
+5.3.3. Test stream giữa Mic và Loa bằng lệnh sau
+```sh
+arecord --format=S16_LE --rate=16000 | aplay --format=S16_LE --rate=16000
 ```
 
 Tiếp đó chuyển qua 
