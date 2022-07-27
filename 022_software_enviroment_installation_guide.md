@@ -240,16 +240,17 @@ Test loa bằng lệnh sau
 ```sh
 speaker-test -t wav -c 2
 ```
-4.2.7. Test Mic bằng lệnh sau 
-Ghi âm
+4.3. Test Mic
+
+4.3.1. Ghi âm
 ```sh
 arecord --format=S16_LE --duration=5 --rate=16000 --file-type=raw out.raw
 ```
-Phát lại
+4.3.2. Phát lại
 ```sh
 aplay --format=S16_LE --rate=16000 out.raw
 ```
-4.2.8. Test stream giữa Mic và Loa bằng lệnh sau
+4.3.3. Test stream giữa Mic và Loa bằng lệnh sau
 ```sh
 arecord --format=S16_LE --rate=16000 | aplay --format=S16_LE --rate=16000
 ```
