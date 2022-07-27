@@ -9,7 +9,7 @@
 
 1.2. Download bộ Image cho Raspberry Pi đã cài đặt sẵn Drive cho Respeaker 2 Mic Hat tại Link sau
 
-[GOOGLE DRIVE FILE NÉN 1.4G]([https://www.fshare.vn/file/DEJAIINJE43U](https://drive.google.com/file/d/1SZwM6F2k0eiubYJ0VcXg47Me68E9WReX/view?usp=sharing))
+[GOOGLE DRIVE FILE NÉN 1.4G](https://drive.google.com/file/d/1SZwM6F2k0eiubYJ0VcXg47Me68E9WReX/view?usp=sharing)
 
 ### STEP2. Ghi vào thẻ SD
 
