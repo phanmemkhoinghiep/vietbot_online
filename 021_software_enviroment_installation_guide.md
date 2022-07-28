@@ -80,6 +80,20 @@ Chạy lệnh sau
 ```sh
 sudo cp /home/pi/.asoundrc /etc/asound.conf
 ```
+5.1.3. Cài đặt âm lượng
+
+Vào alxamixer bằng lệnh
+
+```sh
+alsamixer
+```
+bấm F6 để chọn sound card seed, sau đó bấm F5, dùng phím lên trên bàn phím để kéo hết các giá trị lên Max, phím trái, phải để chọn các giá trị Stereo tại các mục tương ứng
+
+Gõ lệnh sau để lưu lại
+
+```sh
+sudo alsactl store
+```
 
 5.2. Cài đặt cho Mic USB (Mic USB thường và Mic Respeaker USB)
 
