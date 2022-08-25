@@ -3,6 +3,7 @@ Vietbot phiên bản Online Beta, sử dụng Server Vietbot tại địa chỉ 
 
 # Sơ đồ luồng xử lý của Vietbot
 
+```sh
 +---+   +----------------+   +---+   +---+                           +---+
 |Mic|-->|Audio Processing|-->|KWS|-->|STT|-------------------------->|NLU|
 +---+   +----------------+   +---+   +---+                           +-+-+
@@ -12,6 +13,7 @@ Vietbot phiên bản Online Beta, sử dụng Server Vietbot tại địa chỉ 
 |Speaker|<--|Playback|<-- File Path/Link|<--|Knowledge/Skill/Action|<--+
 +-------+   +--------+   +-------------+    +----------------------+
 
+```
 Mic: Phần cứng để ghi âm, vietbot hỗ trợ tất cả các loại phần cứng Mic mà hệ điều hành Raspbian/Windows nhận diện được
 Audio Processing: Tùy chọn Có/Không có tùy thuộc vào phần cứng của Micro bao gồm Acoustic Echo Cancellation (AEC), Beamforming, Noise Suppression (NS)..vv 
 Keyword Spotting (KWS): Cơ chế phát hiện hotword để kích hoạt chế độ lắng nghe dòng lệnh. Vietbot sử dụng cơ chế của Picovoice(porcupine)
