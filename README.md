@@ -14,7 +14,7 @@ Vietbot phiên bản Online Beta, sử dụng Server Vietbot tại địa chỉ 
 +-------+   +--------+   +-------------+    +----------------------+
 
 ```
-Mic: Phần cứng để ghi âm, vietbot hỗ trợ tất cả các loại phần cứng Mic mà hệ điều hành Raspbian/Windows nhận diện được
+Mic: Phần cứng để ghi âm, vietbot hỗ trợ tất cả các loại phần cứng Mic mà hệ điều hành Linux/Windows nhận diện được
 
 Audio Processing: Tùy chọn Có/Không có tùy thuộc vào phần cứng của Micro bao gồm Acoustic Echo Cancellation (AEC), Beamforming, Noise Suppression (NS)..vv 
 
