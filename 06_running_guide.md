@@ -31,13 +31,31 @@ Sau khi có kết quả thành công, ra lệnh bằng từ khóa đã có trong
 
 2.1. Chạy bằng Systemd
 
-2.1.1. Tạo file vietbot.service bằng lệnh
+2.1.1. Gõ lệnh
 
 ```sh
 sudo nano /etc/systemd/system/vietbot.service
 ```
 Tại cửa sổ Nano, gõ dòng lệnh sau
 
+2.1.2. Với Mic2Hat, 4MicHat
+
+```sh
+[Unit]
+Description=vietbot
+
+[Service]
+ExecStart = /usr/bin/python3.9  /home/pi/vietbot_online/src/start.py 2>/dev/null
+WorkingDirectory=/home/pi/vietbot_online/src
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
+```
+Với các loại Mic USB
 ```sh
 [Unit]
 Description=vietbot
@@ -54,6 +72,8 @@ User=pi
 [Install]
 WantedBy=multi-user.target
 ```
+
+
 Bấm Ctrl + X, Y, Enter
 
 2.1.2. Gõ lệnh sau
