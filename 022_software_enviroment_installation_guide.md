@@ -194,7 +194,50 @@ aplay -l
 ```
 Lưu lại thông tin về card_id và device_id ở mỗi kết quả lệnh
 
-4.2.2. Khai báo Default cho ALSA
+
+4.2.2 Khai báo thiết bị loa và mic Default
+
+sau đó tạo một file rỗng .asoundrc tại thư mục /home/pi như sau
+
+```sh
+sudo nano /home/pi/.asoundrc
+```
+
+Paste nội dung sau vào
+```sh
+pcm.!default {
+  type asym
+  capture.pcm "mic"  
+  playback.pcm "speaker"  
+}
+pcm.mic {
+  type plug
+  slave {
+    pcm "hw:<card_id>,<device_id>"
+  }
+}
+pcm.speaker {
+  type plug
+  slave {
+    pcm "hw:<card_id>,<device_id>"
+  }
+}
+```
+Thay <card_id> và <device_id> bằng giá trị thu được 4.2.1 ở
+
+Bấm lần lượt Ctrl + X, sau đó Y rồi Enter
+
+Copy file thiết lập cho mọi account 
+
+Chạy lệnh sau
+```sh
+sudo cp /home/pi/.asoundrc /etc/asound.conf
+```
+
+
+
+
+4.2.3. Khai báo Default cho ALSA
 
 Chạy lệnh sau 
 
