@@ -8,7 +8,7 @@ config['mic'].append({
     'led_off_color': '',
     'led_think_mode': '',    
     'led_thing_color': '',            
-    'is_active': False            
+    'is_active': True            
 })
 config['mic'].append({
     'type': 'ReSpeaker 2-Mics Pi HAT',
@@ -20,10 +20,8 @@ config['mic'].append({
 })
 config['mic'].append({
     'type': 'ReSpeaker 2-Mics Pi HAT with WS281x LED',
-    'led_off_mode': 2,
-    'led_off_color': 'fffcff',
-    'led_wakeup_mode': 2,
-    'led_wakeup_color': '128043',  
+    'led_brightness': 100,
+    'led_wakeup_color': 'bc6dca',  
     'is_active': False        
 })
 config['mic'].append({
@@ -40,7 +38,7 @@ config['mic'].append({
     'led_off_color': 'fffcff',
     'led_wakeup_mode': 2,
     'led_wakeup_color': '074a25',    
-    'is_active': True        
+    'is_active': False        
 })
 config['volume'] = []
 config['volume'].append({
@@ -54,7 +52,7 @@ config['hotword_engine'].append({
 config['hotword_engine'].append({
     'name': 'porcupine',
     'is_active': True,
-    'porcupine_access_key': 'pJwv7qAadasdx2D3QecdasdOOWoDvm7JQ=='
+    'porcupine_access_key': 'pJwv7qAaddsfdsfsasdOOWoDvm7JQ=='
 })
 config['hotword'] = []
 config['hotword'].append({
@@ -162,13 +160,13 @@ config['local_stt'] = []
 config['local_stt'].append({
     'name': 'stt_gg_free',
     'time_out': 6000,
-    'is_active': False    
+    'is_active': True    
 })
 config['local_stt'].append({
     'name': 'stt_gg_cloud',
     'token_file': 'google.json',    
     'time_out': 6000,
-    'is_active': True    
+    'is_active': False    
 })
 config['local_stt'].append({
     'name': 'stt_gg_ass',
@@ -198,7 +196,7 @@ config['local_tts'].append({
     'speed': '',
     'pitch': '',
     're_use': True,
-    'is_active': False    
+    'is_active': True    
 })
 config['local_tts'].append({
     'token': 'AIzaSyDsdfsdf_k16b3c',
