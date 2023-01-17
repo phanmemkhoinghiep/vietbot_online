@@ -17,12 +17,17 @@ sudo nano create_config.py
 ```sh
 python3 create_config.py
 ```
-1.4. Chạy boot bằng lệnh 
-
+1.4. Chạy boot
+1.4.1. Chạy có hiện thông báo để biết lỗi xảy ra còn khắc phục
+```sh
+python3 start.py
+```
+1.4.1. Chạy không hiện thông báo khi đã không còn lỗi
 ```sh
 python3 start.py  2>/dev/null
 ```
-1.4. Ra lệnh bằng từ khóa
+
+1.5. Ra lệnh bằng từ khóa
 
 Sau khi có kết quả thành công, ra lệnh bằng từ khóa đã có trong file confg.json sẽ có tiếng Ting và bắt đầu chờ để ra lệnh
 
