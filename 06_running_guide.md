@@ -60,7 +60,8 @@ User=pi
 [Install]
 WantedBy=multi-user.target
 ```
-Với các loại Mic USB
+2.1.3. Với các loại Mic USB
+
 ```sh
 [Unit]
 Description=vietbot
@@ -81,7 +82,7 @@ WantedBy=multi-user.target
 
 Bấm Ctrl + X, Y, Enter
 
-2.1.2. Gõ lệnh sau
+2.1.4. Gõ lệnh sau
 
 ```sh
 sudo systemctl enable vietbot.service
@@ -92,7 +93,7 @@ Created symlink /etc/systemd/system/multi-user.target.wants/vietbot.service → 
 ```
 Hệ thống đã sẵn sàng tự động chạy tu dong vietbot
 
-2.1.3. Gõ lệnh sau để chạy tự động vietbot
+2.1.5. Gõ lệnh sau để chạy tự động vietbot
 ```sh
 sudo systemctl start vietbot
 ```
@@ -100,11 +101,11 @@ hoặc
 ```sh
 sudo reboot
 ```
-2.1.4. Gõ lệnh sau để xem log
+2.1.6. Gõ lệnh sau để xem log
 ```sh
  sudo journalctl -u vietbot.service -f
 ```
-2.1.5. Gõ lệnh sau để stop chạy tự động 
+2.1.7. Gõ lệnh sau để stop chạy tự động 
 
 Gõ lệnh để stop tạm thời
 
@@ -113,7 +114,7 @@ sudo systemctl stop vietbot.service
 ```
 vietbot sẽ stop không chạy cho đến khi khởi động lại
 
-Gõ lệnh để disable
+Gõ lệnh sau để disable
 
 ```sh
 sudo systemctl disable vietbot.service
@@ -124,4 +125,3 @@ Hệ thống sẽ hiện ra
 Removed /etc/systemd/system/multi-user.target.wants/vietbot.service
 ```
 Hệ thống đã stop vietbot không chạy tự động nữa
-
