@@ -18,6 +18,7 @@ sudo nano create_config.py
 python3 create_config.py
 ```
 1.4. Chạy boot
+
 1.4.1. Chạy có hiện thông báo để biết lỗi xảy ra còn khắc phục
 ```sh
 python3 start.py
