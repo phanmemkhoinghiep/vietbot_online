@@ -265,17 +265,17 @@ config['check_url'].append({
 })
 config['server'] = []
 config['server'].append({
-    'server_url': 'http://vietbot.xyz:5000/api',
+    'server_url': 'http://vietbot.vn:5000/api',
     'api_type': 'REST',
     'is_active': True        
 })
 config['server'].append({
-    'server_url': 'ws://vietbot.xyz:7000',
+    'server_url': 'ws://vietbot.vn:7000',
     'api_type': 'WS',
     'is_active': False        
 })
 config['server'].append({
-    'server_url': 'grpc://vietbot.xyz:9000',
+    'server_url': 'grpc://vietbot.vn:9000',
     'api_type': 'gRPC',
     'is_active': False        
 })
