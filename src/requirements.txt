@@ -26,7 +26,6 @@ itsdangerous==2.1.1
 Jinja2==3.0.3
 MarkupSafe==2.1.1
 mutagen==1.45.1
-openai==0.25.0
 pafy==0.5.5
 pip==20.3.4
 pixel-ring==0.1.0
