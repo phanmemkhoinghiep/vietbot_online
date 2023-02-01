@@ -279,17 +279,6 @@ config['server'].append({
     'api_type': 'gRPC',
     'is_active': False        
 })
-config['external_ai'] = []
-config['external_ai'].append({
-    'name': 'gass',
-    'is_active': False        
-})
-config['external_ai'].append({
-    'name': 'chatGPT',
-    'token': 'sk-fsdhfkhsdhkfksdfsdfsdf3a',
-    'engine': 'text-davinci-003',
-    'is_active': True        
-})
 config['button_data'] = []
 config['button_data'].append({
     'gpio_address': 24,
