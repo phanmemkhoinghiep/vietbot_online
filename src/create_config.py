@@ -317,6 +317,19 @@ config['smh_skill'].append({
     'smh_token3':'',
     'is_active': True        
 })
+config['local_ext_bot'] = []
+config['local_ext_bot'].append({
+    'name': 'gass',
+    'credentials_file': 'credentials.json',
+    'device_config_file': 'device_config.json',    
+    'is_active': False    
+})
+config['local_ext_bot'].append({
+    'name': 'chatGPT',
+    'token': 'sk-sdfsdf',
+    'engine': 'text-davinci-003',
+    'is_active': False        
+})
 config['location'] = []
 config['location'].append({
     'long': 105.804817,
