@@ -6,7 +6,7 @@
 
 [GOOGLE DRIVE 1.4G UPDATE T5_2022](https://drive.google.com/file/d/1SZwM6F2k0eiubYJ0VcXg47Me68E9WReX/view?usp=sharing)
 
-1.2 Image cho Raspberry Pi đã cài đặt sẵn cho các loại Mic USB tại link sau:
+1.2. Image cho Raspberry Pi đã cài đặt sẵn cho các loại Mic USB tại link sau:
 
 [GOOGLE DRIVE 1.7G UPDATE T2_2023](https://drive.google.com/file/d/199EHRm31jxJUsTI9e5_UAmPBcfQZvjth/view?usp=sharing)
 
