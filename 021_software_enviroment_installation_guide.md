@@ -2,9 +2,13 @@
 
 ### STEP1. Download bộ Image cho Raspberry Pi đã cài đặt sẵn
 
-Download bộ Image cho Raspberry Pi đã cài đặt sẵn cho tất cả các loại Mic tại Link sau
+1.1. Download bộ Image cho Raspberry Pi đã cài đặt sẵn cho tất cả các loại Mic tại Link sau
 
-[GOOGLE DRIVE FILE NÉN 1.4G](https://drive.google.com/file/d/1SZwM6F2k0eiubYJ0VcXg47Me68E9WReX/view?usp=sharing)
+[GOOGLE DRIVE FILE NÉN 1.4G UPDATE T5_2022](https://drive.google.com/file/d/1SZwM6F2k0eiubYJ0VcXg47Me68E9WReX/view?usp=sharing)
+
+1.2 Download bộ Image cho Raspberry Pi đã cài đặt sẵn cho các loại Mic USB tại link sau:
+
+[GOOGLE DRIVE FILE NÉN 1.7G UPDATE T2_2023](https://drive.google.com/file/d/199EHRm31jxJUsTI9e5_UAmPBcfQZvjth/view?usp=sharing)
 
 ### STEP2. Ghi vào thẻ SD
 
