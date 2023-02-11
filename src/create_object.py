@@ -399,6 +399,7 @@ obj['anniversary_data'].append({
     'month': '03',
     'is_lunar_calendar': True
 })
+                            
 obj['anniversary_data'].append({
     'name':'test code',
     'day': '22',
@@ -435,7 +436,11 @@ obj['anniversary_data'].append({
     'month': '12',
     'is_lunar_calendar': False
 })
+
 obj['lunar_day'] = []
+obj['lunar_day'].append({
+    'value': 'ngày âm'
+})
 obj['lunar_day'].append({
     'value': 'lịch âm'
 })
@@ -648,7 +653,6 @@ obj['light_color_data'].append({
     'G':255,
     'B':0    
 })
-
 
 with open('object.json', 'w') as outfile:
     json.dump(obj, outfile)
