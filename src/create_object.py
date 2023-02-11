@@ -364,28 +364,78 @@ obj['anniversary'].append({
 })
 obj['anniversary_data'] = []
 obj['anniversary_data'].append({
-    'name':'ngày cưới',
-    'day': '10',
-    'month': '04',
+    'name':'tết dương lịch',
+    'day': '01',
+    'month': '01',
     'is_lunar_calendar': False
 })
 obj['anniversary_data'].append({
-    'name':'hội Bình Đà',
+    'name':'tết âm lịch',
     'day': '01',
+    'month': '01',
+    'is_lunar_calendar': True
+})
+obj['anniversary_data'].append({
+    'name':'thành lập đảng cộng sản việt nam',
+    'day': '03',
+    'month': '02',
+    'is_lunar_calendar': False
+})
+obj['anniversary_data'].append({
+    'name':'lễ tình nhân',
+    'day': '14',
+    'month': '02',
+    'is_lunar_calendar': False
+})
+obj['anniversary_data'].append({
+    'name':'quốc tế phụ nữ',
+    'day': '08',
+    'month': '03',
+    'is_lunar_calendar': False
+})
+obj['anniversary_data'].append({
+    'name':'giỗ Tổ',
+    'day': '10',
     'month': '03',
     'is_lunar_calendar': True
 })
-obj['anniversary_data'] = []
 obj['anniversary_data'].append({
     'name':'test code',
     'day': '22',
     'month': '04',
     'is_lunar_calendar': False
 })
-obj['lunar_day'] = []
-obj['lunar_day'].append({
-    'value': 'ngày âm'
+obj['anniversary_data'].append({
+    'name':'giải phóng miền Nam',
+    'day': '30',
+    'month': '04',
+    'is_lunar_calendar': False
 })
+obj['anniversary_data'].append({
+    'name':'quốc tế lao động',
+    'day': '01',
+    'month': '05',
+    'is_lunar_calendar': False
+})
+obj['anniversary_data'].append({
+    'name':'quốc khánh',
+    'day': '02',
+    'month': '09',
+    'is_lunar_calendar': False
+})
+obj['anniversary_data'].append({
+    'name':'phụ nữ Việt Nam',
+    'day': '20',
+    'month': '10',
+    'is_lunar_calendar': False
+})
+obj['anniversary_data'].append({
+    'name':'Giáng Sinh',
+    'day': '24',
+    'month': '12',
+    'is_lunar_calendar': False
+})
+obj['lunar_day'] = []
 obj['lunar_day'].append({
     'value': 'lịch âm'
 })
@@ -510,9 +560,18 @@ obj['fan_oscillate_on'] = []
 obj['fan_oscillate_on'].append({
     'value': 'quay'
 })
+obj['fan_oscillate_on'].append({
+    'value': 'xoay'
+})
+obj['fan_oscillate_on'].append({
+    'value': 'đảo'
+})
 obj['fan_oscillate_off'] = []
 obj['fan_oscillate_off'].append({
     'value': 'đứng'
+})
+obj['fan_oscillate_off'].append({
+    'value': 'cố định'
 })
 obj['fan_increase_speed'] = []
 obj['fan_increase_speed'].append({
@@ -589,6 +648,7 @@ obj['light_color_data'].append({
     'G':255,
     'B':0    
 })
+
 
 with open('object.json', 'w') as outfile:
     json.dump(obj, outfile)

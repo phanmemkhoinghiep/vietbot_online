@@ -86,7 +86,7 @@ act['bigger'].append({
 })
 act['pause'] = []
 act['pause'].append({
-    'value': 'tạm dừng'
+    'value': 'pause'
 })
 act['continue'] = []
 act['continue'].append({
@@ -106,13 +106,6 @@ act['next'].append({
 act['next'].append({
     'value': 'tiếp theo'
 })
-act['exit'] = []
-act['exit'].append({
-    'value': 'exit'
-})
-act['exit'].append({
-    'value': 'thoát'
-})
 act['stop'] = []
 act['stop'].append({
     'value': 'stop'
@@ -120,7 +113,9 @@ act['stop'].append({
 act['stop'].append({
     'value': 'dừng'
 })
-
+act['stop'].append({
+    'value': 'ngừng'
+})
 act['play'] = []
 act['play'].append({
     'value': 'phát'
@@ -156,6 +151,11 @@ act['setup'].append({
 act['setup'].append({
     'value': 'chỉnh'
 })
-
+act['setup'].append({
+    'value': 'thiết lập'
+})
+act['setup'].append({
+    'value': 'chuyển'
+})
 with open('action.json', 'w') as outfile:
     json.dump(act, outfile)
