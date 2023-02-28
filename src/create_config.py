@@ -29,7 +29,8 @@ config['mic'].append({
     'led_off_mode': '',
     'led_off_color': '',
     'led_think_mode': '',    
-    'led_thing_color': '',            
+    'led_thing_color': '',     
+    'led_pattern': 1,    
     'is_active': False        
 })
 config['mic'].append({
