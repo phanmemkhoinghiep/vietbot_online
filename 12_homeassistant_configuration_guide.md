@@ -33,7 +33,7 @@ python3 /home/pi/vietbot_online/src/create_config.json
 
 ### STEP4. Chạy lại bot
 
-4.1. Chạy lại bot theo hướng dẫn tại https://github.com/phanmemkhoinghiep/vietbot_online/blob/main/running_guide.md
+4.1. Chạy lại bot theo hướng dẫn tại [https://github.com/phanmemkhoinghiep/vietbot_online/blob/main/running_guide.md](https://github.com/phanmemkhoinghiep/vietbot_online/blob/beta/06_running_guide.md)
 
 4.2. Chờ khi nào có thông báo là: 'Đã kết nối thành công tới trung tâm điều khiển nhà' là kết nối với Hass thành công
 
@@ -52,9 +52,6 @@ Ví dụ
 <Tắt> <quạt phòng khách>
 <Bật> <đèn trần phòng ngủ>  
 ```
-
-Cấu trúc lệnh như sau:
-
 4.1.1. <action> Lệnh tắt, bật
 
 Một trong các từ được định nghĩa trong request_turn_on, request_off, check của file json, thêm vào bằng cách edit file craete_config, sau đó chạy python3 create_config.py 
@@ -73,7 +70,6 @@ Là tên friendly name của entity tương ứng với thiết bị, đã khai 
 <Hiển thị> <giá trị><nhiệt độ phòng khách>
 <Thông báo> <trạng thái><cửa sân thượng>
 ```
-
 4.1.1. <action> Lệnh kiểm tra
 
 Một trong các từ được định nghĩa trong request_check của file json, thêm vào bằng cách edit file craete_config, sau đó chạy python3 create_config.py 
