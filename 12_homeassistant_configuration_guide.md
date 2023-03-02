@@ -33,7 +33,7 @@ python3 /home/pi/vietbot_online/src/create_config.json
 
 ### STEP4. Chạy lại bot
 
-4.1. Chạy lại bot theo hướng dẫn tại https://github.com/phanmemkhoinghiep/vietbot/blob/main/running_guide.md
+4.1. Chạy lại bot theo hướng dẫn tại https://github.com/phanmemkhoinghiep/vietbot_online/blob/main/running_guide.md
 
 4.2. Chờ khi nào có thông báo là: 'Đã kết nối thành công tới trung tâm điều khiển nhà' là kết nối với Hass thành công
 
