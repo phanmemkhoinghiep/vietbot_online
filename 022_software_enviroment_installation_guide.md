@@ -107,82 +107,7 @@ Bấm Ctrl + X, rồi Y để Save lại
 
 ### STEP4. Config Mig, Speaker, LED
 
-4.1. Cài đặt cho Modun ReSpeaker 2 Mic Hat hoặc ReSpeaker 4-Mic Array for Raspberry Pi (Nếu ko sử dụng thì bỏ qua)
-
-4.1.1. Cài đặt Drive cho Modun
-
-Chạy lần lượt các lệnh sau
-
-```sh
-sudo apt-get update -y
-```
-sau đó 
-```sh
-sudo apt-get upgrade -y
-```
-sau đó
-
-```sh
-git clone https://github.com/respeaker/seeed-voicecard.git
-```
-sau đó
-```sh
-cd seeed-voicecard
-```
-sau đó
-```sh
-sudo ./install.sh
-```
-chờ cài đặt kết thúc
-
-khởi động lại
-
-```sh
-sudo reboot
-
-```
-Sau khi khởi động lại, đăng nhập lại vào console
-
-sau đó tạo một file rỗng .asoundrc tại thư mục /home/pi như sau
-
-```sh
-sudo nano /home/pi/.asoundrc
-```
-Gõ space bar sau đó gõ backspace
-
-Bấm lần lượt Ctrl + X, sau đó Y rồi Enter
-
-4.1.2. Copy file thiết lập cho mọi account 
-
-Chạy lệnh sau
-```sh
-sudo cp /home/pi/.asoundrc /etc/asound.conf
-```
-
-4.1.3. Cài đặt âm lượng
-
-Vào alxamixer bằng lệnh
-
-```sh
-alsamixer
-```
-bấm F6 để chọn sound card seed, sau đó bấm F5, dùng phím lên trên bàn phím để kéo hết các giá trị lên Max, phím trái, phải để chọn các giá trị Stereo tại các mục tương ứng
-
-Gõ lệnh sau để lưu lại
-
-```sh
-sudo alsactl store
-```
-
-4.1.2. Cài đặt nút bấm cho các Modun Mic Hat
-
-```sh
-python3 -m pip install rpi.gpio
-```
-4.2. Cài đặt cho Mic USB (Mic USB thường và Mic Respeaker USB)
-
-4.2.1. Thống kê ID của Mic USB và Loa 
-
+4
 Chạy lệnh sau để biết ID của Mic USB
 ```sh
 arecord -l
@@ -194,50 +119,9 @@ aplay -l
 ```
 Lưu lại thông tin về card_id và device_id ở mỗi kết quả lệnh
 
+Ví dụ card_id là 1, device_id là 0
 
-4.2.2 Khai báo thiết bị loa và mic Default
-
-sau đó tạo một file rỗng .asoundrc tại thư mục /home/pi như sau
-
-```sh
-sudo nano /home/pi/.asoundrc
-```
-
-Paste nội dung sau vào
-```sh
-pcm.!default {
-  type asym
-  capture.pcm "mic"  
-  playback.pcm "speaker"  
-}
-pcm.mic {
-  type plug
-  slave {
-    pcm "hw:<card_id>,<device_id>"
-  }
-}
-pcm.speaker {
-  type plug
-  slave {
-    pcm "hw:<card_id>,<device_id>"
-  }
-}
-```
-Thay <card_id> và <device_id> bằng giá trị thu được 4.2.1 ở
-
-Bấm lần lượt Ctrl + X, sau đó Y rồi Enter
-
-Copy file thiết lập cho mọi account 
-
-Chạy lệnh sau
-```sh
-sudo cp /home/pi/.asoundrc /etc/asound.conf
-```
-
-
-
-
-4.2.3. Khai báo Default cho ALSA
+4.2. Khai báo Default cho ALSA
 
 Chạy lệnh sau 
 
@@ -251,49 +135,73 @@ defaults.ctl.card 0
 defaults.pcm.card 0
 
 ```
-Thay thế ký tự '0' bằng kết quả đã lưu cho <card_id>, ví dụ 1
+Thay thế ký tự '0' bằng kết quả đã lưu cho <card_id>, ví dụ nếu card_id là 1
+
+```sh
+# defaults
+defaults.ctl.card 1
+defaults.pcm.card 1
+
+```
 
 tiếp tục tìm tới 2 dòng sau
 ```sh
 # defaults
 defaults.pcm.device 0
 defaults.pcm.subdevice 0
-```
-Thay thế ký tự '0' bằng kết quả đã lưu cho <device_id>, ví dụ 1 (Nếu 0 thì ko phải thay)
 
-4.2.3. Đưa Account đang dùng (Ví dụ pi) vào group root
+Thay thế ký tự '0' bằng kết quả đã lưu cho <device_id>, ví dụ device_id là 0, thì không phải thay
+
+4.3. Chọn đúng Speaker (Trong trường hợp dùng các dòng Pi có cổng 3.5)
+
+4.3.1. Chạy lệnh
+
+```sh
+sudo raspi-config
+```
+
+4.4.2. Vào các mục mục System Option, Audio, chọn USB Audio rồi Enter, chọn OK rồi Finish
+
+4.3.3 Chọn Reboot hoặc bỏ qua Reboot, sau đó reboot bằng lệnh:
+
+```sh
+sudo reboot
+```
+
+4.4. Đưa Account đang dùng (Ví dụ pi) vào group root
 
 Chạy lệnh sau
 ```sh
 sudo usermod -aG root pi
 ```
-4.2.4. fix lỗi bot không hoạt động sau 1 thời gian.
+4.5. fix lỗi bot không hoạt động sau 1 thời gian.
+
 Chạy lệnh sau
 ```sh
 sudo usermod -aG audio root
 ```
-4.2.5. Reboot lại Pi
+
+4.6. Reboot lại Pi
 Chạy lệnh sau
 ```sh
 sudo reboot
 ```
-4.2.6. Test loa và mic sau khi cài
+4.7. Test loa và mic sau khi cài
 
-Test loa bằng lệnh sau
+4.7.1. Test loa bằng lệnh sau
 ```sh
 speaker-test -t wav -c 2
 ```
-4.3. Test Mic
-
-4.3.1. Ghi âm
+4.7.2. Test Mic bằng lệnh sau 
+Ghi âm
 ```sh
 arecord --format=S16_LE --duration=5 --rate=16000 --file-type=raw out.raw
 ```
-4.3.2. Phát lại
+Phát lại
 ```sh
 aplay --format=S16_LE --rate=16000 out.raw
 ```
-4.3.3. Test stream giữa Mic và Loa bằng lệnh sau
+4.7.3. Test stream giữa Mic và Loa bằng lệnh sau
 ```sh
 arecord --format=S16_LE --rate=16000 | aplay --format=S16_LE --rate=16000
 ```
