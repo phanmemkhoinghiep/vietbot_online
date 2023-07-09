@@ -54,6 +54,19 @@ Sau đó
 
 ```sh
 nohup bash ./install-wifi-connect.sh & tail -f nohup.out
+[1] 14208
+nohup: ignoring input and appending output to 'nohup.out'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+100  4626  100  4626    0     0   1933      0  0:00:02  0:00:02 --:--:--     0
+WiFi Connect Raspbian Installer: Retrieving latest release from https://api.github.com/repos/balena-os/wifi-connect/releases/45509064...
+WiFi Connect Raspbian Installer: Downloading and extracting https://github.com/balena-os/wifi-connect/releases/download/v4.4.6/wifi-connect-v4.4.6-linux-rpi.tar.gz...
+WiFi Connect Raspbian Installer: Successfully installed wifi-connect 4.4.6
+WiFi Connect Raspbian Installer: NetworkManager is already installed
+WiFi Connect Raspbian Installer: Deactivating and disabling dhcpcd...
+
 ```
 Chờ đến khi nào mất kết nối WiFi với Pi là cài đặt xong
 
